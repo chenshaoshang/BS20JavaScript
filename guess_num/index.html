@@ -38,7 +38,7 @@
         <div class="row text-center">
             <div class="col-12 border border-dark my-5"><label for="" class="p-5" id="show_num"></label></div>
             <div class="col-12 d-flex flex-column justify-content-center align-items-center"><button type="button"
-                    class="btn btn-primary set_radom">產生數字</button>
+                    class="btn btn-primary set_radom">新開局</button>
                 <input type="text" id="input" value="" maxlength=2>
             </div>
             <div class="col-12">
@@ -111,6 +111,7 @@
             GuessNum(guess);
         })
         set.addEventListener('click', function () {
+
             SetRandom();
             label.innerHTML = `${small}~${big}`
         })
