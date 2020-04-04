@@ -111,7 +111,8 @@
             GuessNum(guess);
         })
         set.addEventListener('click', function () {
-
+            small = 0;
+            big = 100;
             SetRandom();
             label.innerHTML = `${small}~${big}`
         })
