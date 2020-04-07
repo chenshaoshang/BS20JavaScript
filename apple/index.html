@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Apple</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        #btn_product_group>button {
+            margin: 0 15px;
+        }
+
+        #color {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="btn_product_group" class="row mb-3 d-flex justify-content-center">
+            <button id="IPhone" type="button" class="products-btn btn btn-dark">IPhone</button>
+            <button id="IPad" type="button" class="products-btn btn btn-dark">IPad</button>
+            <button id="MacPro" type="button" class="products-btn btn btn-dark">MacPro</button>
+            <button id="Watch" type="button" class="products-btn btn btn-dark">Watch</button>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img id="product_img" src="" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <div id="color" class="row"></div>
+                <div id="type" class="row"></div>
+                <div id="price" class="row"> </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        var Product = {
+            IPhone: {
+                Overview: {
+                    ProductName: 'iphone 11',
+                    InitialImgUrl: './pic/iphone11-select-2019-family.jpg'
+                },
+                Exterior: [{
+                        color: 'white',
+                        imgUrl: './pic/iphone11-white-select-2019.png'
+                    },
+                    {
+                        color: 'black',
+                        imgUrl: './pic/iphone11-black-select-2019.png'
+                    },
+                    {
+                        color: 'green',
+                        imgUrl: './pic/iphone11-green-select-2019.png'
+                    },
+                    {
+                        color: 'yellow',
+                        imgUrl: './pic/iphone11-yellow-select-2019.png'
+                    },
+                    {
+                        color: 'purple',
+                        imgUrl: './pic/iphone11-purple-select-2019.png'
+                    },
+                    {
+                        color: 'red',
+                        imgUrl: './pic/iphone11-red-select-2019.png'
+                    }
+                ],
+                Spec: [{
+                        size: '64GB',
+                        price: 24900
+                    },
+                    {
+                        size: '128GB',
+                        price: 26900
+                    },
+                    {
+                        size: '256GB',
+                        price: 30400
+                    }
+                ]
+            },
+            IPad: {
+                Overview: {
+                    ProductName: 'iPad',
+                    InitialImgUrl: './pic/ipad-air-select-201911_GEO_TW.jpg'
+                },
+                Exterior: [{
+                        color: 'spacegray',
+                        imgUrl: './pic/ipad-air-select-wifi-spacegray-201911_GEO_TW.png'
+                    },
+                    {
+                        color: 'silver',
+                        imgUrl: './pic/ipad-air-select-wifi-silver-201911_GEO_TW.png'
+                    },
+                    {
+                        color: 'gold',
+                        imgUrl: './pic/ipad-air-select-wifi-gold-201911_GEO_TW.png'
+                    }
+                ],
+                Spec: [{
+                        size: '64GB',
+                        price: 16900
+                    },
+                    {
+                        size: '256GB',
+                        price: 21900
+                    }
+                ]
+            },
+            MacPro: {
+                Overview: {
+                    ProductName: 'iphone 11',
+                    InitialImgUrl: './pic/iphone11-select-2019-family.jpg'
+                },
+                Exterior: [{
+                        color: 'white',
+                        imgUrl: './pic/iphone11-white-select-2019.png'
+                    },
+                    {
+                        color: 'black',
+                        imgUrl: './pic/iphone11-black-select-2019.png'
+                    },
+                    {
+                        color: 'green',
+                        imgUrl: './pic/iphone11-green-select-2019.png'
+                    },
+                    {
+                        color: 'yellow',
+                        imgUrl: './pic/iphone11-yellow-select-2019.png'
+                    },
+                    {
+                        color: 'purple',
+                        imgUrl: './pic/iphone11-purple-select-2019.png'
+                    },
+                    {
+                        color: 'red',
+                        imgUrl: './pic/iphone11-red-select-2019.png'
+                    }
+                ],
+                Spec: [{
+                        size: '64GB',
+                        price: 24900
+                    },
+                    {
+                        size: '128GB',
+                        price: 26900
+                    },
+                    {
+                        size: '256GB',
+                        price: 30400
+                    }
+                ]
+            },
+            Watch: {
+                Overview: {
+                    ProductName: 'iphone 11',
+                    InitialImgUrl: './pic/iphone11-select-2019-family.jpg'
+                },
+                Exterior: [{
+                        color: 'white',
+                        imgUrl: './pic/iphone11-white-select-2019.png'
+                    },
+                    {
+                        color: 'black',
+                        imgUrl: './pic/iphone11-black-select-2019.png'
+                    },
+                    {
+                        color: 'green',
+                        imgUrl: './pic/iphone11-green-select-2019.png'
+                    },
+                    {
+                        color: 'yellow',
+                        imgUrl: './pic/iphone11-yellow-select-2019.png'
+                    },
+                    {
+                        color: 'purple',
+                        imgUrl: './pic/iphone11-purple-select-2019.png'
+                    },
+                    {
+                        color: 'red',
+                        imgUrl: './pic/iphone11-red-select-2019.png'
+                    }
+                ],
+                Spec: [{
+                        size: '64GB',
+                        price: 24900
+                    },
+                    {
+                        size: '128GB',
+                        price: 26900
+                    },
+                    {
+                        size: '256GB',
+                        price: 30400
+                    }
+                ]
+            }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--<link rel="icon" href="../../favicon.ico">-->
+
+  <title>Guess number</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+  <!-- Custom styles for this template -->
+  <link href="stylesheets/dashboard.css" rel="stylesheet">
+
+  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!--<script src="../../assets/js/ie-emulation-modes-warning.js"></script>-->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-6 main">
+        <div class="btn-group btn-group-justified">
+          <a id="start" type="button" class="btn btn-default" onclick="SetRandom()">開始</a>
+          <a id="restart" type="button" class="btn btn-default" disabled>放棄重來</a>
+          <a id="cheat" type="button" class="btn btn-default" disabled>看答案</a>
+        </div>
+        <br>
+        <ul id="guessResults" class="list-group">
+        </ul>
+        <div class="input-group">
+          <span class="input-group-addon" id="sizing-addon1">猜答案</span>
+          <input id="userGuess" type="text" name="" class="form-control" value="" maxlength="4" required="required"
+            disabled>
+          <span class="input-group-btn">
+            <a id="guess" type="button" class="btn btn-default">猜!</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+  <script src="scripts/bootstrap.min.js"></script>
+  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+  <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  <script>
+    var guess = '';
+    var temp = [];
+    var start = document.getElementById('start');
+    var restart = document.getElementById('restart');
+    var cheat = document.getElementById('cheat');
+    var userguess = document.getElementById('userGuess');
+    var guess_num = document.getElementById('guess');
+    var ul = document.getElementById('guessResults');
+    start.addEventListener('click', SetRandom);
+    restart.addEventListener('click', resetRandom);
+    cheat.addEventListener('click', ans);
+    guess_num.addEventListener('click', guessNum)
+    userguess.onkeyup = function (event) {
+      if (event.keyCode == 13) {
+        guessNum();
+      }
+    }
+
+    function SetRandom() {
+      while (guess.length < 4) {
+        let temp = Math.floor(Math.random() * 10);
+        if (!guess.includes(temp.toString())) {
+          guess += temp;
+        }
+      }
+      restart.removeAttribute('disabled');
+      cheat.removeAttribute('disabled');
+      userguess.removeAttribute('disabled')
+      start.setAttribute('disabled', true)
+    }
+
+    function guessNum() {
+      var a = 0;
+      var b = 0;
+      temp = Array.from(userguess.value);
+      let li = document.createElement('li');
+      let span = document.createElement('span');
+      let distinct = (value, index, self) => {
+        return self.indexOf(value) === index;
+      }
+      let distinctCount = temp.filter(distinct);
+      if (distinctCount.length < 4) {
+        alert('請重新輸入');
+        userguess.value = '';
+      } else {
+        for (let i = 0; i < temp.length; i++) {
+          for (let j = 0; j < guess.length; j++) {
+            if (guess[j] == temp[i].toString()) {
+              if (j == i) {
+                a++;
+              } else {
+                b++;
+              }
+            }
+          }
+        }
+        if (distinctCount.length > 3) {
+          ul.appendChild(li)
+          li.appendChild(span)
+          li.classList.add('list-group-item');
+          if (a < 4) {
+            span.classList.add('label-danger', 'label')
+            span.innerHTML = `${a}A${b}B`;
+            li.innerHTML += `${userguess.value}`;
+          } else {
+            span.classList.add('label-success', 'label')
+            span.innerHTML = `${a}A${b}B`;
+            li.innerHTML += `${userguess.value}`;
+          }
+          userguess.value = '';
+        }
+      }
+
+    }
+
+
+
+    function resetRandom() {
+      guess = '';
+      SetRandom();
+      ul.innerHTML = '';
+      userguess.value = '';
+    }
+
+    function ans() {
+      alert(`${guess}`);
+    }
+  </script>
+</body>
+
+</html>

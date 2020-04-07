@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        *,
+        .row {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .Calculator {
+            border: 2px solid #000;
+        }
+
+        .Calculator button {
+            color: #fff;
+        }
+
+        label {
+            color: #000;
+            display: flex;
+            margin: 0;
+            height: 60px;
+            border-bottom: 2px solid #000;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+            padding: 0 1%;
+            font-size: 30px;
+        }
+
+        button {
+            height: 60px;
+            background-color: #777;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .col-3 {
+            padding: 0;
+        }
+
+        .btn_num {
+            background-color: #333;
+        }
+
+        .col-6 {
+            margin: auto;
+        }
+
+        #clear {
+            background-color: #07f;
+        }
+    </style>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+                <div class="Calculator">
+                    <div class="record"><label for="" id='record_num'></label></div>
+                    <div class="output"><label class="" id='show_num'>0</label></div>
+                    <div class="row">
+                        <button class="col-3 operators">+</button>
+                        <button class="col-3 operators">-</button>
+                        <button class="col-3 operators">*</button>
+                        <button class="col-3 operators">/</button>
+
+                    </div>
+                    <div class="row">
+                        <button class="col-3" onclick="AC_Clear()" id="clear">AC</button>
+                        <button class="col-3 btn_num">7</button>
+                        <button class="col-3 btn_num">8</button>
+                        <button class="col-3 btn_num">9</button>
+                    </div>
+                    <div class="row">
+                        <button class="col-3 sqrt" onclick="sqrt()">√</button>
+                        <button class="col-3 btn_num">4</button>
+                        <button class="col-3 btn_num">5</button>
+                        <button class="col-3 btn_num">6</button>
+                    </div>
+
+                    <div class="row">
+                        <button class="col-3 operators">%</button>
+                        <button class="col-3 btn_num">1</button>
+                        <button class="col-3 btn_num">2</button>
+                        <button class="col-3 btn_num">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="col-3" onclick="getans()">=</button>
+                        <button class="col-3 btn_num">0</button>
+                        <button class="col-3 btn_num">00</button>
+                        <button class="col-3 btn_num">.</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById('show_num');
+        var record = document.getElementById('record_num');
+        var num = document.querySelectorAll('.btn_num');
+        var op = document.querySelectorAll('.operators');
+        var result = 0;
+        var temp_num = 0;
+        num.forEach((item) => {
+            item.addEventListener('click', function () {
+                InputNumber(this);
+            });
+        });
+        op.forEach((item) => {
+            item.addEventListener('click', function () {
+                operators(this);
+            });
+        });
+
+        function operators(item) {
+            let input = item.innerText;
+            let temp = show.innerHTML;
+
+            result = 0;
+            if (input == '%') {
+                result = (result + show.innerHTML) / 100;
+                show.innerHTML = result;
+            } else {
+                switch (input) {
+                    case '+':
+                        record.innerHTML += input;
+                        break;
+                    case '-':
+                        record.innerHTML += input;
+                        break;
+                    case '*':
+                        record.innerHTML += input;
+                        break;
+                    case '/':
+                        record.innerHTML += input;
+                        break;
+                }
+                show.innerHTML = 0;
+            }
+        }
+
+        function InputNumber(item) {
+            let input = item.innerText;
+            if (input != '.' && show.innerHTML == 0 && !show.innerHTML.includes('.')) {
+                show.innerHTML = '';
+            }
+            if (input == '.' && !show.innerHTML.includes('.')) {
+                if (show.innerHTML.substr(0, 2) == 00 || record.innerHTML.substr(0, 2) == 00) {
+                    show.innerHTML = 0;
+                    record.innerHTML = 0;
+                }
+                show.innerHTML += input;
+                record.innerHTML += input;
+
+
+            } else if (input != '.') {
+                show.innerHTML += input;
+                record.innerHTML += input;
+            }
+        }
+
+        function AC_Clear() {
+            show.innerHTML = '0';
+            record.innerHTML = '';
+            result = 0;
+            temp_num = 0;
+        }
+
+        function getans() {
+            temp_num = eval(record.innerHTML);
+            result = strip(temp_num);
+            record.innerHTML += `=${result}`;
+            show.innerHTML = result;
+        }
+
+        function strip(num, precision = 12) {
+            return +parseFloat(num.toPrecision(precision));
+        }
+
+
+        function sqrt() {
+            show.innerHTML = Math.sqrt(show.innerHTML, 2);
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
