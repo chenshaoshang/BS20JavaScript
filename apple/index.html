@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/5510fdd9d1.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -25,6 +26,16 @@
         #color {
             box-sizing: border-box;
         }
+
+        p {
+            margin: 10px;
+        }
+
+        p,
+        .btn_color {
+            font-size: 30px;
+            /* color:  whitesmoke; */
+        }
     </style>
 </head>
 
@@ -41,12 +52,16 @@
                 <img id="product_img" src="" alt="" class="img-fluid">
             </div>
             <div class="col-12 col-md-6">
-                <div id="color" class="row"></div>
-                <div id="type" class="row"></div>
+                <div id="color" class="row">
+                </div>
+                <div id="type" class="row">
+                </div>
                 <div id="price" class="row"> </div>
             </div>
 
         </div>
+
+    </div>
     </div>
     <script>
         var Product = {
@@ -56,26 +71,32 @@
                     InitialImgUrl: './pic/iphone11-select-2019-family.jpg'
                 },
                 Exterior: [{
+                        colorValue: '#eee',
                         color: 'white',
                         imgUrl: './pic/iphone11-white-select-2019.png'
                     },
                     {
+                        colorValue: '#000',
                         color: 'black',
                         imgUrl: './pic/iphone11-black-select-2019.png'
                     },
                     {
+                        colorValue: '#bec',
                         color: 'green',
                         imgUrl: './pic/iphone11-green-select-2019.png'
                     },
                     {
+                        colorValue: '#ed9',
                         color: 'yellow',
                         imgUrl: './pic/iphone11-yellow-select-2019.png'
                     },
                     {
+                        colorValue: '#ccd',
                         color: 'purple',
                         imgUrl: './pic/iphone11-purple-select-2019.png'
                     },
                     {
+                        colorValue: '#F24',
                         color: 'red',
                         imgUrl: './pic/iphone11-red-select-2019.png'
                     }
@@ -100,14 +121,17 @@
                     InitialImgUrl: './pic/ipad-air-select-201911_GEO_TW.jpg'
                 },
                 Exterior: [{
-                        color: 'spacegray',
+                        colorValue: '#555',
+                        color: 'gray',
                         imgUrl: './pic/ipad-air-select-wifi-spacegray-201911_GEO_TW.png'
                     },
                     {
+                        colorValue: '#CCC',
                         color: 'silver',
                         imgUrl: './pic/ipad-air-select-wifi-silver-201911_GEO_TW.png'
                     },
                     {
+                        colorValue: '#FBA',
                         color: 'gold',
                         imgUrl: './pic/ipad-air-select-wifi-gold-201911_GEO_TW.png'
                     }
@@ -117,99 +141,149 @@
                         price: 16900
                     },
                     {
-                        size: '256GB',
+                        size: '128GB',
                         price: 21900
                     }
                 ]
             },
             MacPro: {
                 Overview: {
-                    ProductName: 'iphone 11',
-                    InitialImgUrl: './pic/iphone11-select-2019-family.jpg'
+                    ProductName: 'MacBook Pro',
+                    InitialImgUrl: './pic/finish_lockup_13_inch__fc81jwwtykya_large.jpg'
                 },
                 Exterior: [{
-                        color: 'white',
-                        imgUrl: './pic/iphone11-white-select-2019.png'
+                        colorValue: '#eee',
+                        color: 'silver',
+                        imgUrl: './pic/mbp13touch-silver.png'
                     },
                     {
-                        color: 'black',
-                        imgUrl: './pic/iphone11-black-select-2019.png'
-                    },
-                    {
-                        color: 'green',
-                        imgUrl: './pic/iphone11-green-select-2019.png'
-                    },
-                    {
-                        color: 'yellow',
-                        imgUrl: './pic/iphone11-yellow-select-2019.png'
-                    },
-                    {
-                        color: 'purple',
-                        imgUrl: './pic/iphone11-purple-select-2019.png'
-                    },
-                    {
-                        color: 'red',
-                        imgUrl: './pic/iphone11-red-select-2019.png'
+                        colorValue: '#AAA',
+                        color: 'space',
+                        imgUrl: './pic/mbp13touch-space.png'
                     }
+
                 ],
                 Spec: [{
-                        size: '64GB',
-                        price: 24900
-                    },
-                    {
-                        size: '128GB',
-                        price: 26900
-                    },
-                    {
                         size: '256GB',
-                        price: 30400
+                        price: 51300
+                    },
+                    {
+                        size: '512GB',
+                        price: 57300
+                    },
+                    {
+                        size: '1TB',
+                        price: 63300
+                    },
+                    {
+                        size: '2TB',
+                        price: 75300
                     }
                 ]
             },
             Watch: {
                 Overview: {
                     ProductName: 'iphone 11',
-                    InitialImgUrl: './pic/iphone11-select-2019-family.jpg'
+                    InitialImgUrl: './pic/tile_series-5__eeschnk49ru6_large.jpg'
                 },
                 Exterior: [{
-                        color: 'white',
-                        imgUrl: './pic/iphone11-white-select-2019.png'
+                        colorValue: '#ECB',
+                        color: 'gold',
+                        imgUrl: './pic/watch-gold.jpg'
                     },
                     {
-                        color: 'black',
-                        imgUrl: './pic/iphone11-black-select-2019.png'
+                        colorValue: '#EEE',
+                        color: 'silver',
+                        imgUrl: './pic/watch-silver.jpg'
                     },
                     {
-                        color: 'green',
-                        imgUrl: './pic/iphone11-green-select-2019.png'
-                    },
-                    {
-                        color: 'yellow',
-                        imgUrl: './pic/iphone11-yellow-select-2019.png'
-                    },
-                    {
-                        color: 'purple',
-                        imgUrl: './pic/iphone11-purple-select-2019.png'
-                    },
-                    {
-                        color: 'red',
-                        imgUrl: './pic/iphone11-red-select-2019.png'
+                        colorValue: '#222',
+                        color: 'spacegray',
+                        imgUrl: './pic/watch-spacegray.jpg'
                     }
                 ],
                 Spec: [{
-                        size: '64GB',
-                        price: 24900
+                        size: '40公釐',
+                        price: 13400
                     },
                     {
-                        size: '128GB',
-                        price: 26900
-                    },
-                    {
-                        size: '256GB',
-                        price: 30400
+                        size: '44公釐',
+                        price: 14400
                     }
                 ]
             }
+        }
+        var img = document.getElementById('product_img');
+        var colorGroup = document.getElementById('color')
+        var typeGroup = document.getElementById('type')
+        var priceGroup = document.getElementById('price')
+        var btn = document.querySelectorAll('.products-btn');
+        btn.forEach(item => {
+            item.addEventListener('click', setitem)
+        });
+
+        function setitem() {
+            let item = this.innerHTML
+            colorGroup.innerHTML = '';
+            typeGroup.innerHTML = '';
+            priceGroup.innerHTML = '';
+            img.setAttribute('src', Product[item].Overview.InitialImgUrl);
+            // 全部外觀設定
+
+            let colordiv = document.createElement('div');
+            let colorh2 = document.createElement('h2');
+            colorh2.innerHTML = '顏色';
+            colordiv.classList.add('d-flex', 'w-100', 'justify-content-center');
+            colorGroup.appendChild(colordiv);
+            colordiv.appendChild(colorh2);
+            Product[item].Exterior.forEach(element => {
+                let divwrap = document.createElement('div');
+                let btnwrap = document.createElement('button');
+                let iwrap = document.createElement('i');
+                divwrap.classList.add('col-4', 'col-md-6');
+                btnwrap.classList.add('btn_color', 'w-100', 'mb-3', 'btn', 'btn-outline-dark');
+                iwrap.classList.add('fas', 'fa-circle', 'fa-3x');
+                iwrap.style.color = element.colorValue;
+                colorGroup.appendChild(divwrap);
+                divwrap.appendChild(btnwrap);
+                btnwrap.appendChild(iwrap);
+                btnwrap.innerHTML += `${element.color}`;
+                btnwrap.addEventListener('click', function () {
+                    img.setAttribute('src', element.imgUrl)
+                })
+            });
+            //規格設置
+            let typediv = document.createElement('div');;
+            let typeh2 = document.createElement('h2');
+            typeh2.innerHTML = '規格';
+            typediv.classList.add('d-flex', 'w-100', 'justify-content-center');
+            typeGroup.appendChild(typediv);
+            typediv.appendChild(typeh2);
+            Product[item].Spec.forEach(element => {
+                let divwrap = document.createElement('div');
+                let btnwrap = document.createElement('button');
+                let btn_p = document.createElement('p');
+                divwrap.classList.add('col-4', 'col-md-6');
+                btnwrap.classList.add('btn_color', 'w-100', 'mb-3', 'btn', 'btn-outline-dark');
+                typeGroup.appendChild(divwrap);
+                divwrap.appendChild(btnwrap);
+                btnwrap.appendChild(btn_p);
+                btn_p.innerHTML = `${element.size}`;
+                btn_p.addEventListener('click', function () {
+                    pwrap.innerHTML = `NT$${element.price}`;
+                })
+            });
+            let pricediv = document.createElement('div');
+            let priceh2 = document.createElement('h2');
+            let divwrap = document.createElement('div');
+            let pwrap = document.createElement('p');
+            priceh2.innerHTML = '價格';
+            pricediv.classList.add('d-flex', 'w-100', 'justify-content-center');
+            priceGroup.appendChild(pricediv);
+            pricediv.appendChild(priceh2);
+            divwrap.classList.add('col-12');
+            priceGroup.appendChild(divwrap);
+            divwrap.appendChild(pwrap);
         }
     </script>
     <!-- Optional JavaScript -->
