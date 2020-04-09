@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    table {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    img {
+        width: 10%;
+    }
+
+
+
+    thead th:nth-child(-n+3):hover {
+        background-color: #777;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .row table th i {
+        display: inline;
+        padding: 0 5px;
+    }
+</style>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/5510fdd9d1.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <h1 class="text-center ">Apple Ipad</h1>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+    <script>
+        var h1 = document.querySelector('h1')
+        var table = document.createElement('table');
+        table.setAttribute('border', '2');
+        var thead = document.createElement('thead');
+        var tbody = document.createElement('tbody');
+        var body = document.querySelector('.row');
+        let ipad = '';
+        var isMode = false;
+        window.onload = function () {
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                ipad = JSON.parse(this.responseText).products;
+                body.appendChild(table);
+                addThead(ipad[0]);
+
+                ipad.forEach(element => {
+                    addTbody(element);
+                });
+            }
+            xhr.open("GET", "https://bs-frontend.azurewebsites.net/api/Apple/IPad");
+            xhr.send();
+        }
+
+
+
+        function addThead(titleArray) {
+            table.appendChild(thead);
+            let tr = document.createElement('tr');
+            thead.appendChild(tr);
+            for (const key in titleArray) {
+                let thtxt = document.createTextNode(key);
+                let th = document.createElement('th')
+                th.appendChild(thtxt);
+                tr.appendChild(th);
+            }
+            var sorticon = document.querySelectorAll('thead th:nth-child(-n+3)')
+
+
+            sorticon.forEach(element => {
+
+                let icon = document.createElement('i');
+                let span = document.createElement('span');
+                icon.classList.add('fas', 'fa-sort');
+
+                span.appendChild(icon)
+
+
+                element.appendChild(span);
+                element.addEventListener('click', function (e) {
+                    //sorticon i.......
+                    for (let i = 0; i < sorticon.length; i++) {
+                        var iset = sorticon[i].querySelector('i');
+                        iset.classList.remove('fa-sort-down');
+                        iset.classList.remove('fa-sort');
+                        iset.classList.remove('fa-sort-up');
+                        iset.classList.add('fa-sort');
+
+                    }
+                    let temp = this.innerText;
+                    tbody.innerHTML = '';
+                    var sortResult = ipad.sort(function (a, b) {
+
+
+                        let a_pad = a[temp].toString().padStart(10, '0');
+                        let b_pad = b[temp].toString().padStart(10, '0');
+                        if (!isMode) {
+                            if (a_pad > b_pad) {
+                                return 1;
+                            } else if (a_pad < b_pad) {
+                                return -1;
+                            } else {
+                                return 0;
+                            }
+                            // console.log(a_pad)
+                        } else {
+                            if (a_pad > b_pad) {
+                                return -1;
+                            } else if (a_pad < b_pad) {
+                                return 1;
+                            } else {
+                                return 0;
+                            }
+                        }
+                    });
+                    sortResult.forEach(element => {
+                        addTbody(element)
+                    });
+                    if (isMode) {
+                        isMode = false;
+                        icon.classList.remove('fa-sort');
+                        icon.classList.remove('fa-sort-up')
+                        icon.classList.add('fa-sort-down')
+                    } else {
+                        isMode = true;
+                        icon.classList.remove('fa-sort');
+                        icon.classList.remove('fa-sort-down')
+                        icon.classList.add('fa-sort-up')
+                    }
+                })
+            });
+        }
+
+        function addTbody(rowArray) {
+            table.appendChild(tbody);
+            let tr = document.createElement('tr');
+            tbody.appendChild(tr);
+            for (const i in rowArray) {
+                if (i == 'picture') {
+                    const item = rowArray[i];
+                    let td = document.createElement('td');
+                    let img = document.createElement('img');
+                    img.setAttribute('src', item);
+                    td.appendChild(img);
+                    tr.appendChild(td);
+                } else {
+                    const item = rowArray[i];
+                    let td = document.createElement('td');
+                    let tdtxt = document.createTextNode(item);
+                    td.appendChild(tdtxt);
+                    tr.appendChild(td);
+                }
+            }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
