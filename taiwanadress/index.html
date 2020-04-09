@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <div id="msg"></div>
+    <style>
+
+    </style>
+    <script src="../Modules/myhelp.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <h1>台灣縣市郵遞區號資訊列表</h1>
+
+        </div>
+        <div class="row">
+            <button>台北</button>
+            <div class="col-12 d-flex justify-content-center">
+                <table>
+                    <thead>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <template id="TempTitle">
+        <tr>
+            <th>縣市</th>
+            <th>區域</th>
+            <th>郵遞區號</th>
+        </tr>
+    </template>
+    <template id="TempRow">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+    <script>
+        var thead = $g('thead');
+        var tbody = $g('tbody');
+        var table = $g('table');
+        var button = $g('button');
+        table.setAttribute('border', '2')
+        let ZipcodeArray = '';
+        window.onload = function () {
+            let xhr = new XMLHttpRequest();
+            xhr.onload = function () {
+                let ZipCodelist = [];
+                if (xhr.readyState == 4 && xhr.status === 200) {
+                    ZipcodeArray = JSON.parse(this.responseText);
+                    ZipcodeArray.forEach(element => {
+                        let ZipCode = {
+                            city: '',
+                            Districts: []
+                        };
+                        ZipCode.city = element.CityName;
+                        element.AreaList.forEach(el => {
+                            let temp = {
+                                Districts: '',
+                                ZipCode: ''
+                            };
+                            temp.Districts = el.AreaName;
+                            temp.ZipCode = el.ZipCode;
+                            ZipCode.Districts.push(temp);
+                        })
+                        ZipCodelist.push(ZipCode);
+                    });
+                    var jsonText = JSON.stringify(ZipCodelist);
+
+                    //排序過的資料
+                    console.log(ZipCodelist)
+
+                    ZipCodelist.forEach(element => {
+                        test(element);
+                    });
+                    addThead();
+                    button.addEventListener('click', function () {
+                        tbody.innerHTML = '';
+                        test(ZipCodelist[0]);
+                    });
+                } else {
+                    msg.textContent = "發生錯誤，HTTP respones:代碼" + xhr.status;
+                }
+            }
+            xhr.open("GET", "http://127.0.0.1:5500/AjaxExamplesLite/TaiwanAdress/Taiwan.json");
+            xhr.send();
+        }
+
+
+        function addThead() {
+            let temptitle = $g('#TempTitle');
+            let cloneContent = temptitle.content.cloneNode(true);
+
+            thead.appendChild(cloneContent)
+        }
+
+        // function addTbody(item) {
+        //     // 宣告一個共用的城市
+        //     let city = item.city;
+        //     for (let j = 0; j < item.Districts.length; j++) {
+        //         let temprow = $g('#TempRow');
+        //         let cloneContent = temprow.content.cloneNode(true);
+        //         let tds = cloneContent.querySelectorAll('td');
+        //         tds[0].textContent = city;
+        //         // 取出item中的Districts陣列
+        //         tds[1].textContent = item.Districts[j].Districts;
+        //         tds[2].textContent = item.Districts[j].ZipCode;
+        //         tbody.appendChild(cloneContent);
+        //     }
+        // }
+
+
+
+
+        function test(item) {
+            let city = item.city;
+            item.Districts.forEach(el => {
+                let temprow = $g('#TempRow');
+                let cloneContent = temprow.content.cloneNode(true);
+                let tds = cloneContent.querySelectorAll('td')
+                tds[0].textContent = city;
+                tds[1].textContent = el.Districts;
+                tds[2].textContent = el.ZipCode;
+                tbody.appendChild(cloneContent)
+
+            });
+        }
+    </script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
