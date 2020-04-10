@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom Markers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
+        var map;
+
+        function initMap(el) {
+
+            map = new google.maps.Map(
+                document.getElementById('map'), {
+                    center: new google.maps.LatLng(24.7571306, 120.9522639),
+                    zoom: 15
+                });
+
+            var myLatLng = {
+                lat: 24.7571306,
+                lng: 120.9522639
+            };
+
+            // 範例------------------------------------------------------------------------------
+            /*  var features = [{
+                 position: new google.maps.LatLng(24.7571306, 125.9522633),
+                 type: 'cry'
+             }, {
+                 position: new google.maps.LatLng(24.7571306, 120.9522637),
+                 type: 'smile'
+             }]; */
+
+
+
+
+            // ajax
+            // --------------------------------------------------------------------------------------------------------------------------------------------
+            $.ajax({
+                type: "get",
+                url: "https://maskmap.azurewebsites.net/api/mask/getmaskstock",
+                dataType: "json",
+                success: function (req) {
+                    let masksitelist = [];
+                    req.features.forEach(element => {
+                        let temp = {
+                            name: '',
+                            coordinates: [],
+                            masksLeft: '',
+                            childMasksLeft: ''
+                        };
+                        temp.name = element.properties.name;
+                        temp.coordinates = element.geometry.coordinates;
+                        temp.masksLeft = element.properties.masksLeft;
+                        temp.childMasksLeft = element.properties.childMasksLeft;
+                        masksitelist.push(temp);
+                    });
+                    var features = [];
+                    masksitelist.forEach(item => {
+
+                        if (item.masksLeft == 0 && item.childMasksLeft == 0) {
+                            let temp = {
+                                position: '',
+                                type: ''
+                            }
+
+                            let txt = {
+                                lat: item.coordinates[1],
+                                lng: item.coordinates[0]
+                            }
+                            temp.position = txt;
+                            temp.type =
+                                'https://icon-icons.com/icons2/1648/PNG/32/10058cryingface_110005.png';
+                            features.push(temp);
+                        } else {
+                            let temp = {
+                                position: '',
+                                type: ''
+
+                            }
+                            var txt = {
+                                lat: item.coordinates[1],
+                                lng: item.coordinates[0]
+                            }
+                            temp.position = txt;
+                            temp.type =
+                                'https://icon-icons.com/icons2/2275/PNG/48/covid_corona_hygiene_mask_health_protect_coronavirus_icon_140781.png';
+                            features.push(temp);
+                        }
+
+
+                    });
+
+                    features.forEach(function (feature) {
+                        var marker = new google.maps.Marker({
+                            position: feature.position,
+                            icon: feature.type,
+                            map: map
+                        });
+
+                    });
+
+                },
+                error: function () {
+                    console.log('XXXXX')
+                }
+
+            })
+            // ajax
+            // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+            //中華大學座標--------------------------------------------------------------------------------
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+
+            // ---------------------------------------------------------------------------------------------
+            // Create markers.
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlKWP4uWjQIR3WDAWLAu6rUhBfc3_ppag&callback=initMap">
+    </script>
+</body>
+
+</html>
