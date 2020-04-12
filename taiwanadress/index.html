@@ -15,7 +15,7 @@
     <style>
 
     </style>
-    <script src="../Modules/myhelp.js"></script>
+    <script src="myhelp.js"></script>
 </head>
 
 <body>
@@ -66,41 +66,46 @@
                 let ZipCodelist = [];
                 if (xhr.readyState == 4 && xhr.status === 200) {
                     ZipcodeArray = JSON.parse(this.responseText);
-                    ZipcodeArray.forEach(element => {
-                        let ZipCode = {
-                            city: '',
-                            Districts: []
-                        };
-                        ZipCode.city = element.CityName;
-                        element.AreaList.forEach(el => {
-                            let temp = {
-                                Districts: '',
-                                ZipCode: ''
-                            };
-                            temp.Districts = el.AreaName;
-                            temp.ZipCode = el.ZipCode;
-                            ZipCode.Districts.push(temp);
-                        })
-                        ZipCodelist.push(ZipCode);
-                    });
-                    var jsonText = JSON.stringify(ZipCodelist);
-
+                    // 轉換未排序資料
+                    // ---------------------------------------------------------------------------------------------
+                    /*  ZipcodeArray.forEach(element => {
+                         let ZipCode = {
+                             city: '',
+                             Districts: []
+                         };
+                         ZipCode.city = element.CityName;
+                         console.log(element)
+                         element.AreaList.forEach(el => {
+                             let temp = {
+                                 Districts: '',
+                                 ZipCode: ''
+                             };
+                             temp.Districts = el.AreaName;
+                             temp.ZipCode = el.ZipCode;
+                             ZipCode.Districts.push(temp);
+                         })
+                         ZipCodelist.push(ZipCode);
+                     });
+                    //  ------------------------------------------------------------------------------------------------
+                    //轉換資料
+                     var jsonText = JSON.stringify(ZipCodelist); */
+                    // ----------------------------------------------------------------------------------------------------------
                     //排序過的資料
-                    console.log(ZipCodelist)
+                    console.log(ZipcodeArray)
 
-                    ZipCodelist.forEach(element => {
+                    ZipcodeArray.forEach(element => {
                         test(element);
                     });
                     addThead();
                     button.addEventListener('click', function () {
                         tbody.innerHTML = '';
-                        test(ZipCodelist[0]);
+                        test(ZipcodeArray[0]);
                     });
                 } else {
                     msg.textContent = "發生錯誤，HTTP respones:代碼" + xhr.status;
                 }
             }
-            xhr.open("GET", "http://127.0.0.1:5500/AjaxExamplesLite/TaiwanAdress/Taiwan.json");
+            xhr.open("GET", "http://127.0.0.1:5502/taiwanadress/Adress.json");
             xhr.send();
         }
 
@@ -112,20 +117,20 @@
             thead.appendChild(cloneContent)
         }
 
-        // function addTbody(item) {
-        //     // 宣告一個共用的城市
-        //     let city = item.city;
-        //     for (let j = 0; j < item.Districts.length; j++) {
-        //         let temprow = $g('#TempRow');
-        //         let cloneContent = temprow.content.cloneNode(true);
-        //         let tds = cloneContent.querySelectorAll('td');
-        //         tds[0].textContent = city;
-        //         // 取出item中的Districts陣列
-        //         tds[1].textContent = item.Districts[j].Districts;
-        //         tds[2].textContent = item.Districts[j].ZipCode;
-        //         tbody.appendChild(cloneContent);
-        //     }
-        // }
+        function addTbody(item) {
+            // 宣告一個共用的城市
+            let city = item.city;
+            for (let j = 0; j < item.Districts.length; j++) {
+                let temprow = $g('#TempRow');
+                let cloneContent = temprow.content.cloneNode(true);
+                let tds = cloneContent.querySelectorAll('td');
+                tds[0].textContent = city;
+                // 取出item中的Districts陣列
+                tds[1].textContent = item.Districts[j].Districts;
+                tds[2].textContent = item.Districts[j].ZipCode;
+                tbody.appendChild(cloneContent);
+            }
+        }
 
 
 

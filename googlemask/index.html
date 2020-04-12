@@ -1,17 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <title>Custom Markers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- markerclusterer -->
+    <script type="text/javascript" src="/markerclusterer.js"></script>
+
+
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+        }
+
+        .btn-link:focus,
+        .btn-link:hover,
+        .btn-link {
+            text-decoration: none;
+        }
+
+        .card-header {
+            padding: 0;
+        }
+
         /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+           * element that contains the map. */
         #map {
+            top: -100%;
             height: 100%;
+            width: 80%;
+            right: -20%;
         }
 
         /* Optional: Makes the sample page fill the window. */
@@ -21,138 +50,378 @@
             margin: 0;
             padding: 0;
         }
+
+        h6,
+        p {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card div:last-child,
+        .btn {
+            padding: 0;
+        }
+
+        .wrap {
+            width: 20%;
+            overflow: auto;
+            height: 100%;
+            text-align: center;
+        }
+
+        ul {
+            margin: 0;
+        }
+
+        li:hover {
+            background-color: #ADa;
+            cursor: pointer;
+        }
+
+        li {
+            border-top: 1px solid #777;
+            border-bottom: 1px solid #777;
+        }
     </style>
+    <title>口罩地圖</title>
 </head>
 
 <body>
-    <div id="map"></div>
 
+    <div class="wrap ">
+        <div class="accordion " id="accordionExample">
+        </div>
+    </div>
+    <div id="map"></div>
+    <template id="tempadd">
+        <div class="card ">
+            <div class="card-header">
+                <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" aria-expanded="false">
+                    </button>
+                </h2>
+            </div>
+            <div class="collapse" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </template>
     <script>
         var map;
+        var aliveInfoWindow = '';
+        var markers = [];
+        var citytemp = [];
+        var towntemp = [];
+        var result;
+        var searchlist = [];
+        var features = [];
+        var elecity = '';
+        var eletown = '';
 
-        function initMap(el) {
-
-            map = new google.maps.Map(
-                document.getElementById('map'), {
-                    center: new google.maps.LatLng(24.7571306, 120.9522639),
-                    zoom: 15
-                });
-
-            var myLatLng = {
-                lat: 24.7571306,
-                lng: 120.9522639
-            };
-
-            // 範例------------------------------------------------------------------------------
-            /*  var features = [{
-                 position: new google.maps.LatLng(24.7571306, 125.9522633),
-                 type: 'cry'
-             }, {
-                 position: new google.maps.LatLng(24.7571306, 120.9522637),
-                 type: 'smile'
-             }]; */
-
-
-
-
+        function initMap() {
             // ajax
             // --------------------------------------------------------------------------------------------------------------------------------------------
-            $.ajax({
-                type: "get",
-                url: "https://maskmap.azurewebsites.net/api/mask/getmaskstock",
-                dataType: "json",
-                success: function (req) {
-                    let masksitelist = [];
-                    req.features.forEach(element => {
-                        let temp = {
-                            name: '',
-                            coordinates: [],
-                            masksLeft: '',
-                            childMasksLeft: ''
-                        };
-                        temp.name = element.properties.name;
-                        temp.coordinates = element.geometry.coordinates;
-                        temp.masksLeft = element.properties.masksLeft;
-                        temp.childMasksLeft = element.properties.childMasksLeft;
-                        masksitelist.push(temp);
-                    });
-                    var features = [];
-                    masksitelist.forEach(item => {
-
-                        if (item.masksLeft == 0 && item.childMasksLeft == 0) {
-                            let temp = {
-                                position: '',
-                                type: ''
-                            }
-
-                            let txt = {
-                                lat: item.coordinates[1],
-                                lng: item.coordinates[0]
-                            }
-                            temp.position = txt;
-                            temp.type =
-                                'https://icon-icons.com/icons2/1648/PNG/32/10058cryingface_110005.png';
-                            features.push(temp);
-                        } else {
-                            let temp = {
-                                position: '',
-                                type: ''
-
-                            }
-                            var txt = {
-                                lat: item.coordinates[1],
-                                lng: item.coordinates[0]
-                            }
-                            temp.position = txt;
-                            temp.type =
-                                'https://icon-icons.com/icons2/2275/PNG/48/covid_corona_hygiene_mask_health_protect_coronavirus_icon_140781.png';
-                            features.push(temp);
-                        }
-
-
-                    });
-
-                    features.forEach(function (feature) {
-                        var marker = new google.maps.Marker({
-                            position: feature.position,
-                            icon: feature.type,
-                            map: map
-                        });
-
-                    });
-
-                },
-                error: function () {
-                    console.log('XXXXX')
-                }
-
-            })
             // ajax
             // --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            // Try HTML5 geolocation.
+            var center = new google.maps.LatLng(24.7571306, 120.9522639);
+
+        }
+        $.ajax({
+            type: "get",
+
+            url: "https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json",
+            dataType: "json",
+            success: function (req) {
+                let masksitelist = [];
+                req.features.forEach(element => {
+                    let temp = {
+                        name: element.properties.name,
+                        coordinates: [],
+                        mask_adult: element.properties.mask_adult,
+                        mask_child: element.properties.mask_child,
+                        phone: element.properties.phone,
+                        address: element.properties.address,
+                        updated: element.properties.updated,
+                        county: element.properties.county,
+                        town: element.properties.town
+                    };
+                    temp.coordinates = (element.geometry.coordinates);
+                    Missing(temp)
+                    if (towntemp.indexOf(temp.town) == -1) {
+                        addcity = {
+                            city: temp.county,
+                            town: temp.town
+                        }
+                        towntemp.push(addcity)
+                    }
+                    if (citytemp.indexOf(temp.county) == -1) {
+                        citytemp.push(temp.county)
+                    }
+                    masksitelist.push(temp);
+                });
+                result = [...new Set(towntemp.map(item => JSON.stringify(item)))].map(item => JSON
+                    .parse(item));
+
+                let setid = document.getElementsByClassName('card-header')
+                let setlabel = document.getElementsByClassName('collapse')
+                let setbtn = document.getElementsByClassName('collapsed')
+                citytemp.forEach((item, index) => {
+                    tempadd(item);
+                    setid[index].setAttribute('id', `heading${index}`);
+                    setlabel[index].setAttribute('aria-labelledby', `heading${index}`);
+                    setlabel[index].setAttribute('id', `collapse${index}`);
+                    setbtn[index].setAttribute('aria-controls', `collapse${index}`);
+                    setbtn[index].setAttribute('data-target', `#collapse${index}`);
+                });
+                let ul = document.getElementsByTagName('ul')
+                citytemp.forEach((element, index) => {
+                    result.forEach(el => {
+                        if (el.city.indexOf(element) === 0) {
+                            let townli = document.createElement('li');
+                            townli.classList.add('liGroup')
+                            townli.textContent = el.town;
+                            ul[index].appendChild(townli)
+                        }
+                        // console.log(ul[index])
+                    });
+                });
 
 
 
+                masksitelist.forEach(item => {
+                    let temp = {
+                        name: item.name,
+                        position: '',
+                        type: '',
+                        mask_adult: item.mask_adult,
+                        mask_child: item.mask_child,
+                        phone: item.phone,
+                        address: item.address,
+                        updated: item.updated,
+                        county: item.county,
+                        town: item.town
+                    }
+                    var txt = {
+                        lat: item.coordinates[1],
+                        lng: item.coordinates[0]
+                    }
+                    temp.position = txt;
+                    console.log(item.mask_adult, item.mask_child)
+
+                    if (item.mask_adult < 50 && item.mask_child < 50) {
+                        temp.type =
+                            'https://icon-icons.com/icons2/1648/PNG/48/10058cryingface_110005.png';
+                    } else {
+                        temp.type =
+                            'http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png';
+                    }
+                    features.push(temp);
+                });
+                let lis = document.querySelectorAll('.liGroup')
+                let btns = document.getElementsByClassName('collapsed')
+
+                for (let i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener('click', function () {
+                        elecity = (this.innerText)
+                        // alert(elecity)
+                    })
+                }
+                //     
+                lis.forEach(el => {
+                    el.addEventListener('click', function () {
+                        eletown = (this.innerText)
+                        // alert(eletown)
+                        search(`${elecity}`, ` ${eletown}`)
+
+                    })
+                });
+                // search(`${elecity}`, ` ${eletown}`)
+                setmarker(features)
+                initialize(markers);
 
 
+            },
+            error: function () {
+                console.log('XXXXX')
+            }
+        })
+        var wrap = document.getElementById("accordionExample");
+        var uladd = document.getElementsByTagName("ul");
 
+        function search(el_city, el_town) {
+            features.forEach(element => {
+                // console.log(element.town.indexOf(eletown) !== -1, element.county.indexOf(el_city) !== -1)
+                if (element.county.indexOf(el_city) !== -1 && element.town.indexOf(eletown) !== -1) {
+                    console.log(element.position.lat)
+                    /* let temp = {
+                        name: element.name,
+                        position: element.position,
+                        type: element.type,
+                        mask_adult: element.mask_adult,
+                        mask_child: element.mask_child,
+                        phone: element.phone,
+                        address: element.address,
+                        updated: element.updated,
+                        county: element.county,
+                        town: element.town
+                    }
+                    console.log(element.position);
+                    searchlist.push(temp) */
+                    map.setCenter({
+                        let: element.position.lat,
+                        lng: element.position.lng
 
+                    });
 
+                }
+            });
+            // console.log(searchlist)
+        }
 
-
-            //中華大學座標--------------------------------------------------------------------------------
-
-            var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Hello World!'
+        function setmarker(param) {
+            param.forEach(function (feature) {
+                var marker = new google.maps.Marker({
+                    position: feature.position,
+                    icon: feature.type,
+                    map: map
+                });
+                markers.push(marker);
+                let infowindow = new google.maps.InfoWindow({
+                    content: `<h6>${feature.name}</h6><p>大人：${feature.mask_adult}小孩：${feature.mask_child}<p>
+                            <p>${feature.phone}</p>
+                           <p>${feature.address}</p> <p>${feature.updated}</p>` // 支援html
+                });
+                // 監聽 marker click 事件
+                marker.addListener('click', e => {
+                    if (aliveInfoWindow != '') {
+                        aliveInfoWindow.close();
+                        aliveInfoWindow = '';
+                    }
+                    infowindow.open(map, marker);
+                    aliveInfoWindow = infowindow;
+                });
             });
 
-            // ---------------------------------------------------------------------------------------------
-            // Create markers.
+        }
+
+
+        function tempadd(item) {
+            let cardadd = document.getElementById("tempadd")
+            let cloneContent = cardadd.content.cloneNode(true);
+            let btns = cloneContent.querySelectorAll('button')
+            btns[0].textContent = item;
+            wrap.appendChild(cloneContent)
+        }
+
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                'Error: The Geolocation service failed.' :
+                'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+
+        function Missing(item) {
+            if (item.address.includes('巿') != -1) {
+                item.address = item.address.replace('巿', '市')
+                if (item.address.includes('台') != -1) {
+                    item.address = item.address.replace('台', '臺')
+                }
+            };
+            temp = item.address
+            if ((item.county == '') || item.town == "") {
+                item.county = temp.substring(0, 3);
+                item.town = temp.substring(3, 6);
+            }
+            switch (item.county) {
+                case '臺南東':
+                    item.county = '臺南市';
+                    item.town = '東區'
+                    break;
+                case '淡水區':
+                    item.county = '新北市';
+                    item.town = '淡水區'
+                    break;
+                case '花蓮市':
+                    item.county = '花蓮縣';
+                    item.town = '花蓮市'
+                    break;
+                case '彰化市':
+                    item.county = '彰化縣';
+                    item.town = '彰化市'
+                    break;
+                case '屏東市':
+                    item.county = '屏東縣';
+                    item.town = '屏東市'
+                    break;
+                case '950':
+                    item.county = '臺東縣';
+                    item.town = '臺東市'
+                    break;
+                case '為澎湖':
+                    item.county = '澎湖縣';
+                    item.town = '馬公市'
+                    break;
+            }
+
+            if (item.town.indexOf('區') == 1) {
+                item.town = item.town.substring(0, 2);
+            }
+        }
+
+        function initialize(item) {
+            var pos
+            if (navigator.geolocation) {
+                var center = new google.maps.LatLng(24.7571306, 120.9522639);
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    var marker = new google.maps.Marker({
+                        position: pos,
+                        map: map,
+                    });
+                    let infowindow = new google.maps.InfoWindow({
+                        content: '所在位置' // 支援html
+                    });
+                    infowindow.open(map, marker);
+                    map.setCenter(pos);
+                }, function () {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: center,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            var markerCluster = new MarkerClusterer(map, item, {
+                imagePath: '/images/m'
+            });
         }
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlKWP4uWjQIR3WDAWLAu6rUhBfc3_ppag&callback=initMap">
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
 </body>
 
