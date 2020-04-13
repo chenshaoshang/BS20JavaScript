@@ -105,7 +105,9 @@
                     msg.textContent = "發生錯誤，HTTP respones:代碼" + xhr.status;
                 }
             }
-            xhr.open("GET", "http://127.0.0.1:5502/taiwanadress/Adress.json");
+            xhr.open("GET",
+                "https://raw.githubusercontent.com/chenshaoshang/BS20JavaScript/master/taiwanadress/Adress.json"
+            );
             xhr.send();
         }
 
