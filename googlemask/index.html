@@ -127,7 +127,8 @@
                     lng: 120.9522639
                 },
             });
-            map.data.loadGeoJson('http://127.0.0.1:5500/taiwancitys.json');
+            map.data.loadGeoJson(
+                'https://raw.githubusercontent.com/chenshaoshang/BS20JavaScript/master/googlemask/taiwancitys.json');
             map.data.setStyle({
                 // strokeWeight: 1,
                 strokeOpacity: .5,
@@ -153,7 +154,7 @@
 
 
         function GetMarker() {
-            fetch("http://127.0.0.1:5500/points.json")
+            fetch("https://raw.githubusercontent.com/kiang/pharmacies/master/json/points.json")
                 .then(response => response.json())
                 .then(item => {
                     datalist = item;
@@ -168,7 +169,7 @@
                         let temp = el.properties
                         if (temp.mask_adult < 50 && temp.mask_adult) {
                             marker.icon =
-                                'https://icon-icons.com/icons2/1648/PNG/48/10058cryingface_110005.png'
+                                '10058cryingface_110005.png'
                         } else {
                             marker.icon =
                                 'http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png'
