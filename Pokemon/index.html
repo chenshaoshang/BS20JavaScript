@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <h1>寶可夢圖鑑列表</h1>
+    <button id='addone'>Click +1</button>
+    <button id='removeone'>Click -1</button>
+    <button id='addall'>Click All</button>
+
+    <div id='container'>
+    </div>
+    <script>
+        // var index = 1;
+        // $('#addone').click(function () {
+        //     var fileName = index.toString().padStart(3, '0');
+        //     if ($('img:hidden').size() == 0) {
+        //         alert('00')
+        //     }
+        //     container.append("<img>")
+        //     $('img').eq(index - 1).attr('src',
+        //         `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`).on("click",
+        //         function () {
+        //             $(this).remove();
+        //             index--
+        //         });
+        //     index++
+        // })
+        var index = 1;
+        var container = $('#container');
+        $('#addone').click(function () {
+            if ($('img:hidden').length <= 0) {
+                container.append("<img>")
+                var fileName = index.toString().padStart(3, '0');
+                $('img').eq(index - 1).attr('src',
+                    `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`).on("click",
+                    function () {
+                        $(this).hide();
+                    });
+                index++
+            } else {
+                $('img:hidden:last').show();
+            }
+        })
+        $('#removeone').click(function () {
+            var len = container.children().length
+            if (len > 0) {
+                container.children().last().remove()
+                index--;
+            }
+        })
+        $('#addall').click(function () {
+            for (let i = 1; i < 890; ++i) {
+                if ($('img:hidden').length <= 0) {
+                    container.append("<img>")
+                    var fileName = i.toString().padStart(3, '0');
+                    $('img').eq(i - 1).attr('src',
+                        `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${fileName}.png`).on(
+                        "click",
+                        function () {
+                            $(this).hide();
+                        });
+                } else {
+                    $('img:hidden:last').show();
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
