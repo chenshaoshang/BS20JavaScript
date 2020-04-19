@@ -37,9 +37,7 @@
         }
 
         .show {
-
             background-color: #777;
-
         }
 
         a:hover {
@@ -54,7 +52,6 @@
             margin: auto;
             text-align: center;
             padding: 10px 0;
-
         }
 
         #card {
@@ -148,7 +145,7 @@
 
         function GetDataJSON() {
             fetch(
-                    'http://127.0.0.1:5501/final.json'
+                    'https://raw.githubusercontent.com/chenshaoshang/BS20JavaScript/master/lol/final.json'
                 )
                 .then(response => response.json())
                 .then(text => {
@@ -156,7 +153,6 @@
                         CreatHeroList(element)
                         modal[index].addEventListener('click', function () {
                             ShowInfo(element.Attributes, element.img, show[index].innerText)
-
                         })
                     });
                 })
@@ -165,7 +161,7 @@
                 })
         }
         window.onload = GetDataJSON(
-            'http://127.0.0.1:5501/lol/data.json'
+            'https://raw.githubusercontent.com/chenshaoshang/BS20JavaScript/master/lol/final.json'
         )
         // console.log(addHero, test[0])
 
@@ -195,24 +191,6 @@
             setitem[6].innerText = '魔力回復：' + el.ManaRecovery;
             setitem[7].innerText = '魔法防禦：' + el.MagicDefense;
             setitem[8].innerText = '攻擊距離：' + el.Attackdistance;
-
-            // "Life Recovery": "3.5(+0.55 每級)",
-            // "Magic": "350(+45 每級)",
-            // "Mana Recovery": "11.5(+0.4 每級)",
-            // "Movement speed": "330",
-            // "Physical Defense": "28(+3.5 每級)",
-            // "Magic Defense": "30(+0.5 每級)"
-            // <li>0</li>
-            //                 <li>1</li>
-            //                 <li>2</li>
-            //                 <li>3</li>
-            //                 <li>4</li>
-            //             </ul>
-            //             <ul>
-            //                 <li>5</li>
-            //                 <li>6</li>
-            //                 <li>7</li>
-            //                 <li>8</li>
         }
     </script>
 
