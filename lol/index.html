@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .item {
+            display: flex;
+            padding-top: 10px;
+        }
+
+        .item li {
+            padding: 10px;
+        }
+
+        .title {
+            margin: auto;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+            background-color: #0AA;
+            /* color: #FFF; */
+        }
+
+        .show {
+
+            background-color: #777;
+
+        }
+
+        a:hover {
+            background-color: #0AA;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .text {
+            margin: auto;
+            text-align: center;
+            padding: 10px 0;
+
+        }
+
+        #card {
+            border: none;
+            margin-bottom: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: 285px;
+            object-fit: cover;
+        }
+
+        @media screen and (min-width: 1200px) {
+            #card {
+                max-width: 20%;
+            }
+        }
+    </style>
+    <title>LOL英雄</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="title">
+                <H1>英雄圖鑑</H1>
+            </div>
+        </div>
+        <div class="row" id="hero">
+        </div>
+    </div>
+    <template id="herolist">
+        <div class="card col-6 col-sm-4 col-md-3" id="card" data-toggle="modal" data-target="#exampleModal">
+            <a class="show" href="##">
+                <!-- <div class="pic" id="icon"> -->
+                <div class="pic">
+                    <img src=".." id="icon">
+                </div>
+                <!-- </div> -->
+                <div class="text">
+                    <p id="name"></p> <span id="role"></span>
+                </div>
+            </a>
+        </div>
+    </template>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        123
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src=".." alt="英雄圖片" id='heroimg'>
+                    <div class="item">
+                        <ul>
+                            <li>0</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <ul>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var herolist = document.getElementById('hero')
+        var modal = document.getElementsByClassName('card')
+        var show = document.getElementsByTagName('p')
+        var setitem = document.getElementsByTagName('li')
+        console.log(setitem[0].innerText)
+
+        function GetDataJSON() {
+            fetch(
+                    'http://127.0.0.1:5501/final.json'
+                )
+                .then(response => response.json())
+                .then(text => {
+                    text.forEach((element, index) => {
+                        CreatHeroList(element)
+                        modal[index].addEventListener('click', function () {
+                            ShowInfo(element.Attributes, element.img, show[index].innerText)
+
+                        })
+                    });
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+        }
+        window.onload = GetDataJSON(
+            'http://127.0.0.1:5501/lol/data.json'
+        )
+        // console.log(addHero, test[0])
+
+        function CreatHeroList(el) {
+            let addHero = document.getElementById('herolist');
+            let cloneContent = addHero.content.cloneNode(true);
+            let addp = cloneContent.getElementById('name');
+            let addspan = cloneContent.getElementById('role')
+            let seticon = cloneContent.getElementById('icon')
+            seticon.setAttribute('src', el.iconimg)
+            addp.textContent = el.name
+            addspan.textContent = el.role
+            herolist.appendChild(cloneContent)
+        }
+
+        function ShowInfo(el, pic, index) {
+            let label = document.getElementById('exampleModalLabel')
+            let img = document.getElementById('heroimg')
+            img.setAttribute('src', pic)
+            label.innerText = index;
+            setitem[0].innerText = '生命：' + el.Life;
+            setitem[1].innerText = '魔力：' + el.Magic;
+            setitem[2].innerText = '物理防禦：' + el.PhysicalDefense;
+            setitem[3].innerText = '物理攻擊：' + el.PhysicalAttack;
+            setitem[4].innerText = '跑速：' + el.Movementspeed;
+            setitem[5].innerText = '生命回復：' + el.LifeRecovery;
+            setitem[6].innerText = '魔力回復：' + el.ManaRecovery;
+            setitem[7].innerText = '魔法防禦：' + el.MagicDefense;
+            setitem[8].innerText = '攻擊距離：' + el.Attackdistance;
+
+            // "Life Recovery": "3.5(+0.55 每級)",
+            // "Magic": "350(+45 每級)",
+            // "Mana Recovery": "11.5(+0.4 每級)",
+            // "Movement speed": "330",
+            // "Physical Defense": "28(+3.5 每級)",
+            // "Magic Defense": "30(+0.5 每級)"
+            // <li>0</li>
+            //                 <li>1</li>
+            //                 <li>2</li>
+            //                 <li>3</li>
+            //                 <li>4</li>
+            //             </ul>
+            //             <ul>
+            //                 <li>5</li>
+            //                 <li>6</li>
+            //                 <li>7</li>
+            //                 <li>8</li>
+        }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

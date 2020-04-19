@@ -1,0 +1,2519 @@
+[{
+    "id": 1,
+    "name": "AATROX",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "580(+90 每級)",
+        "LifeRecovery": "3(+1 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "60(+5 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "38(+3.25 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 2,
+    "name": "AHRI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "526 (+92 每級)",
+        "LifeRecovery": "6.5 (+0.6 每級)",
+        "Magic": "418 (+25 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "53.04(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "20.88 (+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 3,
+    "name": "AKALI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt80ff58fe809777ff/5db05fa8adc8656c7d24e7d6/RiotX_ChampionList_akali.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "575 (+95 每級)",
+        "LifeRecovery": "8 (+0.5 每級)",
+        "Magic": "200 (+0 每級)",
+        "ManaRecovery": "50 (+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "62.4 (+3.3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "23 (+3.5 每級)",
+        "MagicDefense": "37 (+1.25 每級)"
+    }
+}, {
+    "id": 4,
+    "name": "ALISTAR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3b366925d2fd8fdb/5db05fa856458c6b3fc1750b/RiotX_ChampionList_alistar.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "600 (+106 每級)",
+        "LifeRecovery": "8.5 (+0.85 每級)",
+        "Magic": "350 (+40 每級)",
+        "ManaRecovery": "8.5 (+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "62(+3.75 每級)",
+        "Attackdistance": "1225",
+        "PhysicalDefense": "44(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 5,
+    "name": "AMUMU",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt40dfbe48a61c439f/5db05fa80b39e86c2f83dbf9/RiotX_ChampionList_amumu.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "613.12(+84 每級)",
+        "LifeRecovery": "9(+0.85 每級)",
+        "Magic": "287.2(+40 每級)",
+        "ManaRecovery": "7.382(+0.525 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "53.38(+3.8 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+3.8 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 6,
+    "name": "ANIVIA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3d24a1482453088a/5db05fa8df78486c826dcce8/RiotX_ChampionList_anivia.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "480 (+82 每級)",
+        "LifeRecovery": "5.5 (+0.55 每級)",
+        "Magic": "495 (+25 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "51.376 (+3.2 每級)",
+        "Attackdistance": "600",
+        "PhysicalDefense": "21.22 (+4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 7,
+    "name": "ANNIE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt28c708665427aef6/5db05fa89481396d6bdd01a6/RiotX_ChampionList_annie.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "524 (+88 每級)",
+        "LifeRecovery": "5.5 (+0.55 每級)",
+        "Magic": "418 (+25 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "50.41 (+2.625 每級)",
+        "Attackdistance": "625",
+        "PhysicalDefense": "19.22 (+4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 8,
+    "name": "APHELIOS",
+    "iconimg": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "500 (+86 每級)",
+        "LifeRecovery": "3.25 (+0.55 每級)",
+        "Magic": "348 (+42 每級)",
+        "ManaRecovery": "6.5 (+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "57 (+2.2 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "28 (+3 每級)",
+        "MagicDefense": "26 (+0.5 每級)"
+    }
+}, {
+    "id": 9,
+    "name": "ASHE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt943aae038e2dee98/5db05fa8e9effa6ba5295f91/RiotX_ChampionList_ashe.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "539 (+85 每級)",
+        "LifeRecovery": "3.5 (+0.55 每級)",
+        "Magic": "280 (+32 每級)",
+        "ManaRecovery": "6.972 (+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "61 (+2.96 每級)",
+        "Attackdistance": "600",
+        "PhysicalDefense": "26 (+3.4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 10,
+    "name": "AURELION SOL",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5dd3569fc67d6664/5db05fa8bd24496c390ae4d8/RiotX_ChampionList_aurelionsol.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "575 (+92 每級)",
+        "LifeRecovery": "7 (+0.6 每級)",
+        "Magic": "350 (+50 每級)",
+        "ManaRecovery": "6 (+0.8 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "57 (+3.2 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "19 (+3.6 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 11,
+    "name": "AZIR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0e3f847946232167/5db05fa889fb926b491ed7ff/RiotX_ChampionList_azir.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "552 (+92 每級)",
+        "LifeRecovery": "7 (+0.75 每級)",
+        "Magic": "480 (+21 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "52 (+2.8 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "19.04 (+3 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 12,
+    "name": "BARD",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbbe3ce0c0ae1305b/5db05fb23a326d6df6c0e7b3/RiotX_ChampionList_bard.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "575(+89 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "350(+50 每級)",
+        "ManaRecovery": "6(+0.45 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "52(+3 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "34(+4 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 13,
+    "name": "BLITZCRANK",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd7ef7e56ce1fe17b/5db05fb26af83b6d7032c8f8/RiotX_ChampionList_blitzcrank.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "582(+95 每級)",
+        "LifeRecovery": "8.5(+0.75 每級)",
+        "Magic": "267.2(+40 每級)",
+        "ManaRecovery": "8.5(+0.8 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "61.54(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "37(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 14,
+    "name": "BRAND",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc8ca2e9bba653dda/5db05fb2dc674266df3d5d30/RiotX_ChampionList_brand.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "519.68(+88 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "469(+21 每級)",
+        "ManaRecovery": "10.665(+0.6 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "57.04(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "21.88(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 15,
+    "name": "BRAUM",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd140e30fa86d6ddd/5db05fb2242f426df132f95d/RiotX_ChampionList_braum.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "540(+9/ 每級)",
+        "LifeRecovery": "8.5(+1 每級)",
+        "Magic": "310.6(+45 每級)",
+        "ManaRecovery": "6(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "55.376(+3.2 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "47(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 16,
+    "name": "CAITLYN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt014f4b6fc9bacd10/5db05fb00b39e86c2f83dbff/RiotX_ChampionList_caitlyn.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "481(+91 每級)",
+        "LifeRecovery": "3.5(+0.55 每級)",
+        "Magic": "313.7(+35 每級)",
+        "ManaRecovery": "7.4(+0.55 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "62(+2.88 每級)",
+        "Attackdistance": "650",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 17,
+    "name": "CAMILLE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt413fcd7681fe0773/5db05fb089fb926b491ed805/RiotX_ChampionList_camille.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "575.6(+85 每級)",
+        "LifeRecovery": "8.5(+0.8 每級)",
+        "Magic": "338.8(+32 每級)",
+        "ManaRecovery": "8.15(+0.75 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "68(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "38(+3.8 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 18,
+    "name": "CASSIOPEIA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte189be8189da97ea/5db05fb1bd24496c390ae4de/RiotX_ChampionList_cassiopeia.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "575(+90 每級)",
+        "LifeRecovery": "5.5(+0.5 每級)",
+        "Magic": "350(+40 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "328",
+        "PhysicalAttack": "53(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "20(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 19,
+    "name": "CHO'GATH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4dfb71de3ddc8166/5db05fb13a326d6df6c0e7ad/RiotX_ChampionList_chogath.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "574.4(+80 每級)",
+        "LifeRecovery": "9(+0.85 每級)",
+        "Magic": "272.2(+40 每級)",
+        "ManaRecovery": "7.206(+0.45 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "69(+4.2 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "38(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 20,
+    "name": "CORKI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd918c4d0a86347a/5db05fb1df78486c826dccee/RiotX_ChampionList_corki.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "518(+87 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "350.16(+34 每級)",
+        "ManaRecovery": "7.424(+0.55 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "55(+2.5 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 21,
+    "name": "DARIUS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt38b52be4a2cb1004/5db05fb19481396d6bdd01ac/RiotX_ChampionList_darius.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "582.24(+100 每級)",
+        "LifeRecovery": "10(+0.95 每級)",
+        "Magic": "263(+37.5 每級)",
+        "ManaRecovery": "6.6(+0.35 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "64(+5 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "39(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 22,
+    "name": "DIANA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt56570083d2a5e20e/5db05fbc823d426762825fdf/RiotX_ChampionList_diana.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "594(+95 每級)",
+        "LifeRecovery": "7.5(+0.85 每級)",
+        "Magic": "375(+25 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "57.04(+3 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "31(+3.6 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 23,
+    "name": "DR. MUNDO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte88a3d7e9e408904/5db05fbce9effa6ba5295f99/RiotX_ChampionList_drmundo.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "58.2(+89 每級)",
+        "LifeRecovery": "8(+0.75 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "61.27(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "36(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 24,
+    "name": "DRAVEN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc0be728e4cbb8f2a/5db05fbc89fb926b491ed80b/RiotX_ChampionList_draven.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "574(+88 每級)",
+        "LifeRecovery": "3.75(+0.7 每級)",
+        "Magic": "360.56(+39 每級)",
+        "ManaRecovery": "8.042(+0.65 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "60(+3.61 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "29(+3.3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 25,
+    "name": "EKKO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf22ba7e6328e4376/5db05fbd242f426df132f963/RiotX_ChampionList_ekko.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "585(+85 每級)",
+        "LifeRecovery": "9(+0.9 每級)",
+        "Magic": "280(+50 每級)",
+        "ManaRecovery": "7(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "58(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "32(+3 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 26,
+    "name": "ELISE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfe21ff2ddb84d5d1/5db05fbd0b39e86c2f83dc05/RiotX_ChampionList_elise.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "534(+93 每級)",
+        "LifeRecovery": "5.5(+0.6 每級)",
+        "Magic": "324(+50 每級)",
+        "ManaRecovery": "6 (+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "55(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "27(+3.35 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 27,
+    "name": "EVELYNN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte24b4c6ec1beebb9/5db05fbddf78486c826dccf4/RiotX_ChampionList_evelynn.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "575 (+84 每級)",
+        "LifeRecovery": "8.5(+0.75 每級)",
+        "Magic": "315.6(+42 每級)",
+        "ManaRecovery": "8.108(+0.6 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "61(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "37(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 28,
+    "name": "EZREAL",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt60f687c95425f73f/5db05fbd2dc72966da746704/RiotX_ChampionList_ezreal.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "500(+86 每級)",
+        "LifeRecovery": "4(+0.55 每級)",
+        "Magic": "375(+50 每級)",
+        "ManaRecovery": "8.5(+0.65 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "60(+2.5 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "22(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 29,
+    "name": "FIDDLESTICKS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1151ac1242311053/5db05fbca6470d6ab91ce594/RiotX_ChampionList_fiddlesticks.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "580.4(+92 每級)",
+        "LifeRecovery": "5.5(+0.6 每級)",
+        "Magic": "500(+28 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "55.36(+2.625 每級)",
+        "Attackdistance": "480",
+        "PhysicalDefense": "34(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 30,
+    "name": "FIORA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt935dd149b2617ac8/5db05fbcdc674266df3d5d36/RiotX_ChampionList_fiora.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "550(+85 每級)",
+        "LifeRecovery": "8.5(+0.55 每級)",
+        "Magic": "300(+40 每級)",
+        "ManaRecovery": "8(+0.7 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "68(+3.3 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "33(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 31,
+    "name": "FIZZ",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6000fa69e03c25c0/5db05fbc56458c6b3fc17513/RiotX_ChampionList_fizz.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "570(+98 每級)",
+        "LifeRecovery": "8(+0.7 每級)",
+        "Magic": "317.2(+37 每級)",
+        "ManaRecovery": "6(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "58.04(+3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "22(+3.4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 32,
+    "name": "GALIO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5890d1ab5c8be01f/5db05fc6823d426762825fe5/RiotX_ChampionList_galio.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "562(+112 每級)",
+        "LifeRecovery": "8(+0.8 每級)",
+        "Magic": "500(+40 每級)",
+        "ManaRecovery": "9.5(+0.7 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "59(+3.5 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "24(+3.5 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 33,
+    "name": "GANGPLANK",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfdff3781ccfb2a5c/5db05fc689fb926b491ed811/RiotX_ChampionList_gangplank.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "540(+82 每級)",
+        "LifeRecovery": "6(+0.6 每級)",
+        "Magic": "282(+40 每級)",
+        "ManaRecovery": "7.5(+0.7 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "64(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 34,
+    "name": "GAREN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte41a162aed9339b7/5db05fc60b39e86c2f83dc0d/RiotX_ChampionList_garen.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "620(+84 每級)",
+        "LifeRecovery": "8(+0.5 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "66(+4.5 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "36(+3 每級)",
+        "MagicDefense": "32.1(+0.75 每級)"
+    }
+}, {
+    "id": 35,
+    "name": "GNAR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta80f79dd96ee5d30/5db05fc6df78486c826dcd00/RiotX_ChampionList_gnar.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "510(+65 每級)",
+        "LifeRecovery": "4.5(+1.75 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "59(+3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "32(+2.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 36,
+    "name": "GRAGAS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt795841adba722f85/5db05fc43a326d6df6c0e7b9/RiotX_ChampionList_gragas.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "600(+95 每級)",
+        "LifeRecovery": "5.5(+0.5 每級)",
+        "Magic": "400(+47 每級)",
+        "ManaRecovery": "6(+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "64(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+3.6 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 37,
+    "name": "GRAVES",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd8935c6b4025d320/5db05fc4bd24496c390ae4e4/RiotX_ChampionList_graves.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "555(+92 每級)",
+        "LifeRecovery": "8(+0.7 每級)",
+        "Magic": "325(+40 每級)",
+        "ManaRecovery": "8(+0.7 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "68(+3 每級)",
+        "Attackdistance": "425",
+        "PhysicalDefense": "33(+3.4 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 38,
+    "name": "HECARIM",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blteb9ce5304ec48e19/5db05fc5df78486c826dccfa/RiotX_ChampionList_hecarim.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "580(+90 每級)",
+        "LifeRecovery": "7(+0.75 每級)",
+        "Magic": "277.2(+40 每級)",
+        "ManaRecovery": "6.5(+0.6 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "66(+3.2 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "36(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 39,
+    "name": "HEIMERDINGER",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd30d85446d154070/5db05fc57d28b76cfe4397ef/RiotX_ChampionList_heimerdinger.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "488(+87 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "385(+20 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "55.536(+2.7 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "19.04(+3 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 40,
+    "name": "ILLAOI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc44e90a5547120a2/5db05fc5347d1c6baa57be2b/RiotX_ChampionList_illaoi.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "585.6(+95 每級)",
+        "LifeRecovery": "9.5(+0.8 每級)",
+        "Magic": "300(+40 每級)",
+        "ManaRecovery": "7.5(+0.75 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "68(+5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+3.8 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 41,
+    "name": "IRELIA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf5f2b8de93870aef/5db05fcea6470d6ab91ce59a/RiotX_ChampionList_irelia.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "580(+95 每級)",
+        "LifeRecovery": "8.5 (+0.85 每級)",
+        "Magic": "350 (+30 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "63(+4 每級)",
+        "Attackdistance": "200",
+        "PhysicalDefense": "36(+3 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 42,
+    "name": "IVERN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5fff73e1df1873de/5db05fce7d28b76cfe4397f5/RiotX_ChampionList_ivern.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "585(+95 每級)",
+        "LifeRecovery": "7(+0.85 每級)",
+        "Magic": "450(+60 每級)",
+        "ManaRecovery": "6(+0.75 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "50(+3 每級)",
+        "Attackdistance": "475",
+        "PhysicalDefense": "27(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 43,
+    "name": "JANNA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt02bf5329f8abe45d/5db05fcedf78486c826dcd06/RiotX_ChampionList_janna.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "500(+70 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "350(+64 每級)",
+        "ManaRecovery": "11.5(+0.4 每級)",
+        "Movementspeed": "315",
+        "PhysicalAttack": "46(+1.5 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "28(+3.8 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 44,
+    "name": "JARVANIV",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5898626d7016d222/5db05fcfdc674266df3d5d3c/RiotX_ChampionList_jarvaniv.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "570(+90 每級)",
+        "LifeRecovery": "8(+0.7 每級)",
+        "Magic": "300(+40 每級)",
+        "ManaRecovery": "6.5 (+0.45 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "64(+3.4 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "34(+3.6 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 45,
+    "name": "JAX",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b301613598c3f17/5db05fcf89fb926b491ed81d/RiotX_ChampionList_jax.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "592.8(+85 每級)",
+        "LifeRecovery": "8.5(+0.55 每級)",
+        "Magic": "338.8(+32 每級)",
+        "ManaRecovery": "7.576(+0.7 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "68(+3.375 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "36(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 46,
+    "name": "JAYCE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt51557edc36ad88a1/5db05fcf0b39e86c2f83dc13/RiotX_ChampionList_jayce.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "560(+90 每級)",
+        "LifeRecovery": "6(+0.6 每級)",
+        "Magic": "375(+45 每級)",
+        "ManaRecovery": "6 (+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "54(+4.25 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "27(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 47,
+    "name": "JHIN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbf6c70d9272a5a2a/5db05fcfe9d7526ab429e532/RiotX_ChampionList_jhin.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "556(+91 每級)",
+        "LifeRecovery": "3.75(+0.55 每級)",
+        "Magic": "300(+50 每級)",
+        "ManaRecovery": "6 (+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "59(+4.7 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "24(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 48,
+    "name": "JINX",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta2cba784d9fad4b8/5db05fce89fb926b491ed817/RiotX_ChampionList_jinx.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "581(+84 每級)",
+        "LifeRecovery": "3.75(+0.5 每級)",
+        "Magic": "245(+45 每級)",
+        "ManaRecovery": "6.7(+1 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "57(+3.4 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 49,
+    "name": "KAI'SA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte38dc660dfe79204/5db05fce2dc72966da74670c/RiotX_ChampionList_kaisa.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "571(+86 每級)",
+        "LifeRecovery": "3.5(+0.55 每級)",
+        "Magic": "344.88 (+38 每級)",
+        "ManaRecovery": "8.2(+0.45 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "59(+1.7 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "28(+3 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 50,
+    "name": "KALISTA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb7f0196921c74e8c/5db05fcee9d7526ab429e52c/RiotX_ChampionList_kalista.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "534(+100 每級)",
+        "LifeRecovery": "3.75(+0.55 每級)",
+        "Magic": "250(+45 每級)",
+        "ManaRecovery": "63(+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "69(+4 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "21(+4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 51,
+    "name": "KARMA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt39748c7b67252d6f/5db05fd70b39e86c2f83dc19/RiotX_ChampionList_karma.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "534(+95 每級)",
+        "LifeRecovery": "5.5 (+0.55 每級)",
+        "Magic": "374(+50 每級)",
+        "ManaRecovery": "11.5(+0.5 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "53.544(+3.3 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "26 (+3.8 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 52,
+    "name": "KARTHUS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt69b8fad9d1e78514/5db05fd7df78486c826dcd0c/RiotX_ChampionList_karthus.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "528(+87 每級)",
+        "LifeRecovery": "6.5(+0.55 每級)",
+        "Magic": "467(+30.5 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "45.66(+3.25 每級)",
+        "Attackdistance": "450",
+        "PhysicalDefense": "20.88(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 53,
+    "name": "KASSADIN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20773f2f67e00a74/5db05fd7bd24496c390ae4ea/RiotX_ChampionList_kassadin.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "576(+90 每級)",
+        "LifeRecovery": "6(+0.5 每級)",
+        "Magic": "397.6(+67 每級)",
+        "ManaRecovery": "6(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "58.852(+3.9 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "19(+2.8 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 54,
+    "name": "KATARINA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb73e3edb5937676a/5db05fd7823d426762825feb/RiotX_ChampionList_katarina.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "602(+94 每級)",
+        "LifeRecovery": "7.5(+0.7 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "58(+3.2 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "27.88(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 55,
+    "name": "KAYLE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2c7675893b5c76bc/5db05fd77d28b76cfe4397fb/RiotX_ChampionList_kayle.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "600(+85 每級)",
+        "LifeRecovery": "5(+0.5 每級)",
+        "Magic": "330(+50 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "50(+2.5 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "26 (+3 每級)",
+        "MagicDefense": "34(+0.5 每級)"
+    }
+}, {
+    "id": 56,
+    "name": "KAYN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt64edf2d3729b57c1/5db05fd656458c6b3fc17519/RiotX_ChampionList_kayn.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "585(+85 每級)",
+        "LifeRecovery": "8(+0.75 每級)",
+        "Magic": "410 (+50 每級)",
+        "ManaRecovery": "11.5(+0.95 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "68(+3.3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "38(+3.3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 57,
+    "name": "KENNEN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc87932e656d1076e/5db05fd6adc8656c7d24e7dc/RiotX_ChampionList_kennen.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "541(+84 每級)",
+        "LifeRecovery": "5.5(+0.65 每級)",
+        "Magic": "200(+0 每級)",
+        "ManaRecovery": "50(+0 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "48(+3.75 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "29(+3.75 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 58,
+    "name": "KHA'ZIX",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt363d7d62846ffc87/5db05fd6e9effa6ba5295f9f/RiotX_ChampionList_khazix.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "572.8(+85 每級)",
+        "LifeRecovery": "7.5(+0.75 每級)",
+        "Magic": "327.2(+40 每級)",
+        "ManaRecovery": "7.59(+0.5 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "63(+3.1 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "36(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 59,
+    "name": "KINDRED",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc0f0007660b7a07b/5db05fd689fb926b491ed823/RiotX_ChampionList_kindred.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "540(+85 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "300(+35 每級)",
+        "ManaRecovery": "7(+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "65(+2.5 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "29(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 60,
+    "name": "KLED",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1670a0dd8fd5edca/5db05fd66e8b0c6d038c5ca8/RiotX_ChampionList_kled.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "340(+70 每級)",
+        "LifeRecovery": "6(+0.75 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "65(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 61,
+    "name": "KOG'MAW",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltaf483c8f812369fa/5db05fde823d426762825ff1/RiotX_ChampionList_kogmaw.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "534(+88 每級)",
+        "LifeRecovery": "3.75(+0.55 每級)",
+        "Magic": "325(+40 每級)",
+        "ManaRecovery": "8.75(+0.7 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "61(+3.11 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "24(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 62,
+    "name": "LEBLANC",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4aaf881bb90b509f/5db05fde6e8b0c6d038c5cae/RiotX_ChampionList_leblanc.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "528(+92 每級)",
+        "LifeRecovery": "7.5(+0.55 每級)",
+        "Magic": "334(+50 每級)",
+        "ManaRecovery": "6 (+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "54.88(+3.5 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "21.88(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 63,
+    "name": "LEE SIN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt075d278529811445/5db05fde6af83b6d7032c8fe/RiotX_ChampionList_leesin.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "575(+85 每級)",
+        "LifeRecovery": "7.5(+0.7 每級)",
+        "Magic": "200(+0 每級)",
+        "ManaRecovery": "50(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "70(+3.2 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+3.7 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 64,
+    "name": "LEONA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8d46ada03ea1da8c/5db05fdf347d1c6baa57be31/RiotX_ChampionList_leona.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "576.16(+87 每級)",
+        "LifeRecovery": "8.5(+0.85 每級)",
+        "Magic": "302.2(+40 每級)",
+        "ManaRecovery": "6 (+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "60.04(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "47(+3.6 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 65,
+    "name": "LISSANDRA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt08f869e897566c5b/5db05fdf7d28b76cfe439801/RiotX_ChampionList_lissandra.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "550(+90 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "475(+30 每級)",
+        "ManaRecovery": "8 (+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "53(+2.7 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "22(+3.7 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 66,
+    "name": "LUCIAN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3db0d62352b0b4f1/5db05fdf6e8b0c6d038c5cb4/RiotX_ChampionList_lucian.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "571(+86 每級)",
+        "LifeRecovery": "3.75(+0.65 每級)",
+        "Magic": "348.88(+38 每級)",
+        "ManaRecovery": "8.176(+0.7 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "64(+2.75 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "28(+3 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 67,
+    "name": "LULU",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt424f04814efb3aca/5db05fdfe9d7526ab429e538/RiotX_ChampionList_lulu.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "525(+74 每級)",
+        "LifeRecovery": "6(+0.6 每級)",
+        "Magic": "350(+55 每級)",
+        "ManaRecovery": "11(+0.6 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "47(+2.6 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "29(+3.7 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 68,
+    "name": "LUX",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb94b4161d8022c45/5db05fdfe9d7526ab429e53c/RiotX_ChampionList_lux.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "490(+85 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "480(+23.5 每級)",
+        "ManaRecovery": "8 (+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "53.54(+3.3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "18.72(+4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 69,
+    "name": "MALPHITE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4d3b4a7e4c44ced7/5db05fdeadc8656c7d24e7e2/RiotX_ChampionList_malaphite.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "574.2(+90 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "282.2(+40 每級)",
+        "ManaRecovery": "7.324(+0.55 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "61.97(+4 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "37(+3.75 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 70,
+    "name": "MALZAHAR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd58a3a2bf5035834/5db05fde0b39e86c2f83dc1f/RiotX_ChampionList_malzahar.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "537(+87 每級)",
+        "LifeRecovery": "6(+0.6 每級)",
+        "Magic": "375(+27.5 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "55(+3 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "18(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 71,
+    "name": "MAOKAI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt757d0e8855d51e03/5db05fe72140ec675d68f4a1/RiotX_ChampionList_maokai.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "565(+95 每級)",
+        "LifeRecovery": "5(+0.75 每級)",
+        "Magic": "377.28(+43 每級)",
+        "ManaRecovery": "7.2(+0.6 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "63.54(+3.3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "39(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 72,
+    "name": "MASTER YI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt46e861d7e6c0ab0c/5db05fe8df78486c826dcd12/RiotX_ChampionList_masteryi.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "598.56(+92 每級)",
+        "LifeRecovery": "7.5(+0.65 每級)",
+        "Magic": "250.56(+42 每級)",
+        "ManaRecovery": "7.256(+0.45 每級)",
+        "Movementspeed": "355",
+        "PhysicalAttack": "66(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 73,
+    "name": "MISS FORTUNE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf36fa7fd7ecb59fb/5db05fe89481396d6bdd01b8/RiotX_ChampionList_missfortune.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "541(+91 每級)",
+        "LifeRecovery": "3.75(+0.65 每級)",
+        "Magic": "325.84(+35 每級)",
+        "ManaRecovery": "8.042(+0.65 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "50(+2.7 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "28(+3 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 74,
+    "name": "MORDEKAISER",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2392a60ff2a2d726/5db05fe8242f426df132f96d/RiotX_ChampionList_mordekaiser.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "575(+90 每級)",
+        "LifeRecovery": "5(+0.75 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "61(+4 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "37(+3 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 75,
+    "name": "MORGANA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc81eece55f126d2d/5db05fe86af83b6d7032c904/RiotX_ChampionList_morgana.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "560(+90 每級)",
+        "LifeRecovery": "5.5(+0.4 每級)",
+        "Magic": "340(+60 每級)",
+        "ManaRecovery": "11(+0.4 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "56(+3.5 每級)",
+        "Attackdistance": "450",
+        "PhysicalDefense": "25(+3.8 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 76,
+    "name": "NAMI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt13bec39f49dc35ee/5db05fe956458c6b3fc1751f/RiotX_ChampionList_nami.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "489.32(+74 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "377.24(+43 每級)",
+        "ManaRecovery": "11.5(+0.4 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "51.208(+3.1 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "29(+4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 77,
+    "name": "NASUS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20a4b154b1756b56/5db05fe7a6470d6ab91ce5a0/RiotX_ChampionList_nasus.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "561.2(+90 每級)",
+        "LifeRecovery": "9(+0.9 每級)",
+        "Magic": "325.6(+42 每級)",
+        "ManaRecovery": "7.44(+0.5 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "67(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "34(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 78,
+    "name": "NAUTILUS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf945a57aa16cea57/5db05fe7347d1c6baa57be37/RiotX_ChampionList_nautilus.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "576.48(+86 每級)",
+        "LifeRecovery": "8.5(+0.55 每級)",
+        "Magic": "400(+47 每級)",
+        "ManaRecovery": "8.626(+0.5 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "61(+3.3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "39(+3.75 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 79,
+    "name": "NEEKO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta62eaac6ad26a4f5/5db05fe7adc8656c7d24e7ea/RiotX_ChampionList_neeko.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "540(+90 每級)",
+        "LifeRecovery": "7.5(+0.75 每級)",
+        "Magic": "450(+30 每級)",
+        "ManaRecovery": "7(+0.7 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "48(+2.5 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "21(+4 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 80,
+    "name": "NIDALEE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5a2da06d413f7c15/5db05ff1df78486c826dcd18/RiotX_ChampionList_nidalee.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "545(+85 每級)",
+        "LifeRecovery": "6(+0.6 每級)",
+        "Magic": "295.6(+45 每級)",
+        "ManaRecovery": "6(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "61(+3.5 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "30 (+0.5 每級)"
+    }
+}, {
+    "id": 81,
+    "name": "NOCTURNE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfc73e3c7dda28d31/5db05ff2adc8656c7d24e7f0/RiotX_ChampionList_nocturne.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "585(+85 每級)",
+        "LifeRecovery": "7 (+0.75 每級)",
+        "Magic": "275(+35 每級)",
+        "ManaRecovery": "7(+0.45 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "62(+3.1 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "38(+3.5 每級)",
+        "MagicDefense": "32.1(+0.75 每級)"
+    }
+}, {
+    "id": 82,
+    "name": "NUNU",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf613746635c6d3c8/5db05ff256458c6b3fc17527/RiotX_ChampionList_nunu.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+
+        "Life": "570 (+82 每級)",
+        "LifeRecovery": "5 (+0.8 每級)",
+        "Magic": "280 (+42 每級)",
+        "ManaRecovery": "7 (+0.5 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "61 (+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "32 (+3 每級)",
+        "MagicDefense": "32.1 (+1.25 每級)"
+    }
+}, {
+    "id": 83,
+    "name": "OLAF",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte922bda45062964b/5db05ff0a6470d6ab91ce5a6/RiotX_ChampionList_olaf.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "597.24(+93 每級)",
+        "LifeRecovery": "8.5(+0.9 每級)",
+        "Magic": "315.6(+42 每級)",
+        "ManaRecovery": "7.466(+0.575 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "68(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+
+    "id": 84,
+    "name": "ORIANNA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3318fc0e8103706d/5db05ff02140ec675d68f4a7/RiotX_ChampionList_orianna.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "530(+91 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "418(+25 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "40.368(+2.6 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "17.04(+3 每級)",
+        "MagicDefense": "26(+0.5 每級)"
+    }
+}, {
+    "id": 85,
+    "name": "ORNN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt639bacdfe8b1fd95/5db05ff1bd24496c390ae4f0/RiotX_ChampionList_ornn.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "590(+95 每級)",
+        "LifeRecovery": "9(+0.9 每級)",
+        "Magic": "340.6(+45 每級)",
+        "ManaRecovery": "8.01(+0.6 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "69(+3.5 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "36(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 86,
+    "name": "PANTHEON",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3f84c538bd36ef02/5db05ff17d28b76cfe43980d/RiotX_ChampionList_pantheon.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "580(+90 每級)",
+        "LifeRecovery": "10(+0.65 每級)",
+        "Magic": "317.12(+31 每級)",
+        "ManaRecovery": "7.356(+0.45 每級)",
+        "Movementspeed": "355",
+        "PhysicalAttack": "64(+3.3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "40(+3.75 每級)",
+        "MagicDefense": "28(+1.25 每級)"
+    }
+}, {
+    "id": 87,
+    "name": "POPPY",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0df0f7bcaf851737/5db05ff1242f426df132f973/RiotX_ChampionList_poppy.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "540(+90 每級)",
+        "LifeRecovery": "8(+0.8 每級)",
+        "Magic": "280(+40 每級)",
+        "ManaRecovery": "7(+0.7 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "64(+4 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "38(+3.25 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 88,
+    "name": "PYKE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt98269cb73e9fce70/5db05ff1347d1c6baa57be3d/RiotX_ChampionList_pyke.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "600(+90 每級)",
+        "LifeRecovery": "7(+0.5 每級)",
+        "Magic": "415(+50 每級)",
+        "ManaRecovery": "8(+1 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "62(+2 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "45(+5 每級)",
+        "MagicDefense": "32(+1.5 每級)"
+    }
+}, {
+    "id": 89,
+    "name": "QIYANA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta6148d8dca105d6b/5db05ff1e9effa6ba5295fa7/RiotX_ChampionList_qiyana.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "590(+90 每級)",
+        "LifeRecovery": "8.5(+0.65 每級)",
+        "Magic": "320(+50 每級)",
+        "ManaRecovery": "8(+0.7 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "64(+3.1 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 90,
+    "name": "QUINN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5cc3e3a189961d90/5db05ffbadc8656c7d24e7fc/RiotX_ChampionList_quinn.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "532.8(+85 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "268.8(+35 每級)",
+        "ManaRecovery": "6.972(+0.4 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "59(+2.4 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 91,
+    "name": "RAKAN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbe844b30961ccb7c/5db05ffb2140ec675d68f4ad/RiotX_ChampionList_rakan.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "540(+85 每級)",
+        "LifeRecovery": "5(+0.5 每級)",
+        "Magic": "315(+50 每級)",
+        "ManaRecovery": "8.75(+0.5 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "62(+3.5 每級)",
+        "Attackdistance": "300",
+        "PhysicalDefense": "32(+3.9 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 92,
+    "name": "RAMMUS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt50cccb68a58349f5/5db05ffbdc674266df3d5d48/RiotX_ChampionList_rammus.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "564.48(+95 每級)",
+        "LifeRecovery": "8(+0.55 每級)",
+        "Magic": "310.44(+33 每級)",
+        "ManaRecovery": "7.84(+0.5 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "55.88(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "36(+4.3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 93,
+    "name": "REK'SAI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4affff3ef114e99b/5db05ffb347d1c6baa57be43/RiotX_ChampionList_reksai.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "570(+85 每級)",
+        "LifeRecovery": "7.5(+0.65 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "64(+3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "36(+3.75 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 94,
+    "name": "RENEKTON",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b5bb4d917759184/5db05ffb242f426df132f979/RiotX_ChampionList_renekton.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "575(+87 每級)",
+        "LifeRecovery": "8(+0.75 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "69(+3.75 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 95,
+    "name": "RENGAR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt282bc8e033db4123/5db05ff9adc8656c7d24e7f6/RiotX_ChampionList_rengar.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "585(+90 每級)",
+        "LifeRecovery": "7(+0.5 每級)",
+        "Magic": "4(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "68(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "34(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 96,
+    "name": "RIVEN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3925b81c7462e26e/5db05ffadc674266df3d5d42/RiotX_ChampionList_riven.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "560(+86 每級)",
+        "LifeRecovery": "8.5(+0.5 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "64(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+3.2 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 97,
+    "name": "RUMBLE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd7c76610fa29d8d6/5db05ffa7d28b76cfe439813/RiotX_ChampionList_rumble.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "589(+85 每級)",
+        "LifeRecovery": "8(+0.6 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "61(+3.2 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "31(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 98,
+    "name": "RYZE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8af977ce4fa7804b/5db05ffa2dc72966da746714/RiotX_ChampionList_ryze.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "575(+98 每級)",
+        "LifeRecovery": "8(+0.8 每級)",
+        "Magic": "300(+50 每級)",
+        "ManaRecovery": "8(+1 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "56(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "22(+3 每級)",
+        "MagicDefense": "34(+0.5 每級)"
+    }
+}, {
+    "id": 99,
+    "name": "SEJUANI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte4d521b893aa5a3e/5db05ffae9d7526ab429e544/RiotX_ChampionList_sejuani.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "560(+100 每級)",
+        "LifeRecovery": "8.5(+1 每級)",
+        "Magic": "400(+40 每級)",
+        "ManaRecovery": "7(+0.7 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "66(+4 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "34(+4.25 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 100,
+    "name": "SENNA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt24f4735ebde3c22b/5db08d642dc72966da74686e/RiotX_ChampionList_senna.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "520(+75 每級)",
+        "LifeRecovery": "3.5(+0.55 每級)",
+        "Magic": "350(+45 每級)",
+        "ManaRecovery": "11.5(+0.4 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "50(+0 每級)",
+        "Attackdistance": "600",
+        "PhysicalDefense": "28(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 101,
+    "name": "SETT",
+    "iconimg": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "600(+93 每級)",
+        "LifeRecovery": "7(+0.5 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "60(+4 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+4 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 102,
+    "name": "SHACO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc8b1d1ba926d01cc/5db060036e8b0c6d038c5cba/RiotX_ChampionList_shaco.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "587(+89 每級)",
+        "LifeRecovery": "8.5(+0.55 每級)",
+        "Magic": "297.2(+40 每級)",
+        "ManaRecovery": "7.156(+0.45 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "63(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "30(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 103,
+    "name": "SHEN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd142d174831b78e9/5db06004242f426df132f97f/RiotX_ChampionList_shen.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "540(+85 每級)",
+        "LifeRecovery": "8.5(+0.75 每級)",
+        "Magic": "400(+0 每級)",
+        "ManaRecovery": "50(+0 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "60(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "34(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 104,
+    "name": "SHYVANA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdb320ec49e0e02a7/5db0600456458c6b3fc1752d/RiotX_ChampionList_shyvana.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "595(+95 每級)",
+        "LifeRecovery": "8.5(+0.8 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "66(+3.4 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "38(+3.35 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 105,
+    "name": "SINGED",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt766d98c27adfde28/5db06004347d1c6baa57be4f/RiotX_ChampionList_singed.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "580(+85 每級)",
+        "LifeRecovery": "9.5(+0.55 每級)",
+        "Magic": "330(+45 每級)",
+        "ManaRecovery": "7.5(+0.55 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "63(+3.375 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "34(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 106,
+    "name": "SION",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7f28f1d689e4ad3d/5db06004adc8656c7d24e802/RiotX_ChampionList_sion.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "545(+73 每級)",
+        "LifeRecovery": "7.5(+0.8 每級)",
+        "Magic": "330(+42 每級)",
+        "ManaRecovery": "8(+0.6 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "68(+4 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "32(+3 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 107,
+    "name": "SIVIR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbe8ea8bfd98ec1f3/5db06002a6470d6ab91ce5ac/RiotX_ChampionList_sivir.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "532(+88 每級)",
+        "LifeRecovery": "3.25(+0.55 每級)",
+        "Magic": "284(+50 每級)",
+        "ManaRecovery": "8(+0.9 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "63(+3 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "26(+3.25 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 108,
+    "name": "SKARNER",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt842a8149ba8b7a3d/5db06003bd24496c390ae4f6/RiotX_ChampionList_skarner.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "601.28(+90 每級)",
+        "LifeRecovery": "9(+0.85 每級)",
+        "Magic": "320(+40 每級)",
+        "ManaRecovery": "7.206(+0.45 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "65(+4.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "38(+3.8 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 109,
+    "name": "SONA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4810827f74fc21b9/5db06003347d1c6baa57be49/RiotX_ChampionList_sona.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "482.36(+77 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "340.6(+45 每級)",
+        "ManaRecovery": "11.5(+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "49(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "28(+3.3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 110,
+    "name": "SORAKA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2141839fdc483592/5db06003e9effa6ba5295fad/RiotX_ChampionList_soraka.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "535(+74 每級)",
+        "LifeRecovery": "2.5(+0.5 每級)",
+        "Magic": "425(+40 每級)",
+        "ManaRecovery": "11.5(+0.4 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "50(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "32(+3.8 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 111,
+    "name": "SWAIN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1a64e469280b8b9f/5db060030b39e86c2f83dc25/RiotX_ChampionList_swain.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "525(+85 每級)",
+        "LifeRecovery": "7(+0.65 每級)",
+        "Magic": "468(+28.5 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "58(+2.7 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "22.72(+4 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 112,
+    "name": "SYLAS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf8ea29aa48fc5e35/5db0600cadc8656c7d24e808/RiotX_ChampionList_sylas.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "525(+115 每級)",
+        "LifeRecovery": "9(+0.9 每級)",
+        "Magic": "280(+50 每級)",
+        "ManaRecovery": "7(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "61(+3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "27(+4 每級)",
+        "MagicDefense": "32(+1.75 每級)"
+    }
+}, {
+    "id": 113,
+    "name": "SYNDRA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd9308eedab3a6fa5/5db0600c3a326d6df6c0e7bf/RiotX_ChampionList_syndra.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "523(+90 每級)",
+        "LifeRecovery": "6.5(+0.6 每級)",
+        "Magic": "480(+40 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "53.872(+2.9 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "24.712(+3.4 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 114,
+    "name": "TAHM KENCH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt87be9cf38f3bc986/5db0600c56458c6b3fc17533/RiotX_ChampionList_tahmkench.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "600(+100 每級)",
+        "LifeRecovery": "6.5(+0.55 每級)",
+        "Magic": "325(+40 每級)",
+        "ManaRecovery": "8(+1 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "56(+3.2 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "47(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 115,
+    "name": "TALIYAH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt35c3537198ee86b9/5db05fc52140ec675d68f49b/RiotX_ChampionList_ialiyah.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "532(+90 每級)",
+        "LifeRecovery": "7(+0.7 每級)",
+        "Magic": "425(+30 每級)",
+        "ManaRecovery": "9.335(+0.85 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "58(+3.3 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "20(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 116,
+    "name": "TALON",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt20a737f99ebcd027/5db0600c89fb926b491ed829/RiotX_ChampionList_talon.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "588(+95 每級)",
+        "LifeRecovery": "8.5(+0.75 每級)",
+        "Magic": "377.2(+37 每級)",
+        "ManaRecovery": "7.6(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "68(+3.1 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "30(+3.5 每級)",
+        "MagicDefense": "39(+1.25 每級)"
+    }
+}, {
+    "id": 117,
+    "name": "TARIC",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6b2d37773c3621e1/5db0600d347d1c6baa57be55/RiotX_ChampionList_taric.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "575(+90 每級)",
+        "LifeRecovery": "6(+0.5 每級)",
+        "Magic": "300(+60 每級)",
+        "ManaRecovery": "8.5(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "55(+3.5 每級)",
+        "Attackdistance": "150",
+        "PhysicalDefense": "40(+3.4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 118,
+    "name": "TEEMO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt30ddbbdc0549078a/5db0600da6470d6ab91ce5b8/RiotX_ChampionList_teemo.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "528(+90 每級)",
+        "LifeRecovery": "5.5(+0.65 每級)",
+        "Magic": "334(+20 每級)",
+        "ManaRecovery": "9.6(+0.45 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "54(+3 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "24.3(+3.75 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 119,
+    "name": "THRESH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt46555de3bfa94d44/5db0600b2140ec675d68f4b5/RiotX_ChampionList_thresh.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "560.52(+93 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "273.92(+44 每級)",
+        "ManaRecovery": "6(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "56(+2.2 每級)",
+        "Attackdistance": "450",
+        "PhysicalDefense": "28(+0 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 120,
+    "name": "TRISTANA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltfbbc3205edf5207a/5db0600bdc674266df3d5d50/RiotX_ChampionList_tristana.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "559(+88 每級)",
+        "LifeRecovery": "3.75(+0.65 每級)",
+        "Magic": "250(+32 每級)",
+        "ManaRecovery": "7.2(+0.45 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "61(+3.3 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "26(+3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 121,
+    "name": "TRUNDLE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt05eb0518bbe963c0/5db0600ba6470d6ab91ce5b2/RiotX_ChampionList_trundle.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "616.28(+96 每級)",
+        "LifeRecovery": "6(+0.75 每級)",
+        "Magic": "281.6(+45 每級)",
+        "ManaRecovery": "7.508(+0.6 每級)",
+        "Movementspeed": "350",
+        "PhysicalAttack": "68(+3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "37(+2.7 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 122,
+    "name": "TRYNDAMERE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3b217144ed3a7faa/5db08d643a326d6df6c0e907/RiotX_ChampionList_tryndamere.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "625.64(+98 每級)",
+        "LifeRecovery": "8.5(+0.9 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "69(+3.7 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+3.1 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 123,
+    "name": "TWISTE DFATE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltaebcdb8b21d440a7/5db0600ce9effa6ba5295fb3/RiotX_ChampionList_twistedfate.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "534(+94 每級)",
+        "LifeRecovery": "5.5(+0.6 每級)",
+        "Magic": "333(+19 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "49.954(+3.3 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "20.542(+3.15 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 124,
+    "name": "TWITCH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt674dca7d5611ebb0/5db060159481396d6bdd01be/RiotX_ChampionList_twitch.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "582(+84 每級)",
+        "LifeRecovery": "3.75(+0.6 每級)",
+        "Magic": "287.2(+40 每級)",
+        "ManaRecovery": "7.256(+0.45 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "59(+3.11 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "27(+3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 125,
+    "name": "UDYR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8350eda62a9ed56c/5db060150b39e86c2f83dc2b/RiotX_ChampionList_udyr.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "593.32(+99 每級)",
+        "LifeRecovery": "6(+0.75 每級)",
+        "Magic": "270.4(+30 每級)",
+        "ManaRecovery": "7.506(+0.45 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "66(+5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "34(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 126,
+    "name": "URGOT",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt162b78ba3ece1d4f/5db060157d28b76cfe43981b/RiotX_ChampionList_urgot.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "585(+88 每級)",
+        "LifeRecovery": "7.5(+0.7 每級)",
+        "Magic": "340(+45 每級)",
+        "ManaRecovery": "7.25(+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "63(+4 每級)",
+        "Attackdistance": "350",
+        "PhysicalDefense": "36(+4.25 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 127,
+    "name": "VARUS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt596158d85a8360d1/5db060132dc72966da74671a/RiotX_ChampionList_varus.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "500(+89 每級)",
+        "LifeRecovery": "3.5(+0.55 每級)",
+        "Magic": "360(+33 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "61(+3.11 每級)",
+        "Attackdistance": "575",
+        "PhysicalDefense": "27(+3.4 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 128,
+    "name": "VAYNE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9eaabc908956c8b0/5db060146af83b6d7032c90a/RiotX_ChampionList_vayne.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "515(+89 每級)",
+        "LifeRecovery": "3.5(+0.55 每級)",
+        "Magic": "231.8(+35 每級)",
+        "ManaRecovery": "6.972(+0.4 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "60(+2.36 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "23(+3.4 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 129,
+    "name": "VEIGAR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltda2b568b0c3e5847/5db06014e9effa6ba5295fb9/RiotX_ChampionList_veigar.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "505(+94 每級)",
+        "LifeRecovery": "6.5(+0.6 每級)",
+        "Magic": "490(+26 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "52(+2.7 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "23(+3.75 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 130,
+    "name": "VEL'KOZ",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt825d0c333f6e74ae/5db060142140ec675d68f4bb/RiotX_ChampionList_velkoz.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "520(+88 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "469(+21 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "54.9379(+3.1416 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "21.88(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 131,
+    "name": "VI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3bd79abf330fc807/5db06014dc674266df3d5d56/RiotX_ChampionList_vi.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "585(+85 每級)",
+        "LifeRecovery": "10(+1 每級)",
+        "Magic": "295(+45 每級)",
+        "ManaRecovery": "8(+0.65 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "63(+3.5 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "30(+4 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 132,
+    "name": "VIKTOR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt6e54b3de49b7bbf3/5db06015df78486c826dcd1e/RiotX_ChampionList_viktor.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "530(+90 每級)",
+        "LifeRecovery": "8(+0.65 每級)",
+        "Magic": "405(+25 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "53(+3 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "23(+4 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 133,
+    "name": "VLADIMIR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt39ab5027f6fa1b81/5db0601589fb926b491ed82f/RiotX_ChampionList_vladimir.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "537(+96 每級)",
+        "LifeRecovery": "7(+0.6 每級)",
+        "Magic": "2(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "55(+3 每級)",
+        "Attackdistance": "450",
+        "PhysicalDefense": "23(+3.3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 134,
+    "name": "VOLIBEAR",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt41447a436267de03/5db0601d6e8b0c6d038c5cc0/RiotX_ChampionList_volibear.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "584.48(+86 每級)",
+        "LifeRecovery": "8(+0.65 每級)",
+        "Magic": "270.4(+30 每級)",
+        "ManaRecovery": "8.092(+0.65 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "68(+3.3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "35(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 135,
+    "name": "WARWICK",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt08a92f3897cfc8f5/5db0601ddc674266df3d5d5c/RiotX_ChampionList_warwick.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "550(+85 每級)",
+        "LifeRecovery": "4(+0.75 每級)",
+        "Magic": "280(+35 每級)",
+        "ManaRecovery": "7.466(+0.575 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "65(+3 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "33(+3.2 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 136,
+    "name": "MONKEY KING",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltaf44673e1a16af30/5db05fe87d28b76cfe439807/RiotX_ChampionList_monkeyking.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "540(+85 每級)",
+        "LifeRecovery": "4(+0.65 每級)",
+        "Magic": "300(+45 每級)",
+        "ManaRecovery": "8(+0.65 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "68(+4 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "34(+3.5 每級)",
+        "MagicDefense": "28(+1.25 每級)"
+    }
+}, {
+    "id": 137,
+    "name": "XAYAH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0d029ccdb18a4299/5db0601ba6470d6ab91ce5be/RiotX_ChampionList_xayah.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg",
+    "role": "MARKSMAN",
+    "Attributes": {
+        "Life": "561(+86 每級)",
+        "LifeRecovery": "3.25(+0.75 每級)",
+        "Magic": "340(+40 每級)",
+        "ManaRecovery": "8.25(+0.75 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "60(+2.9 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "25(+3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 138,
+    "name": "XERATH",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbda694c8890e94e5/5db0601ce9effa6ba5295fbf/RiotX_ChampionList_xeratth.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "526(+92 每級)",
+        "LifeRecovery": "5.5(+0.55 每級)",
+        "Magic": "459(+22 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "54.7(+3 每級)",
+        "Attackdistance": "525",
+        "PhysicalDefense": "21.88(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 139,
+    "name": "XIN ZHAO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltca4486a1630ef517/5db0601ce9d7526ab429e54a/RiotX_ChampionList_xinzhao.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "570(+92 每級)",
+        "LifeRecovery": "8(+0.7 每級)",
+        "Magic": "273.8(+35 每級)",
+        "ManaRecovery": "7.256(+0.45 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "66(+3 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "35(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 140,
+    "name": "YASUO",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3a319fc884dc6880/5db0601c242f426df132f985/RiotX_ChampionList_yasuo.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "523(+87 每級)",
+        "LifeRecovery": "6.5(+0.9 每級)",
+        "Magic": "100(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "60(+3.2 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "30(+3.4 每級)",
+        "MagicDefense": "30(+1.25 每級)"
+    }
+}, {
+    "id": 141,
+    "name": "YORICK",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570d89dd9a76ba08/5db0601c823d426762825ff9/RiotX_ChampionList_yorick.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg",
+    "role": "FIGHTER",
+    "Attributes": {
+        "Life": "580(+100 每級)",
+        "LifeRecovery": "8(+0.8 每級)",
+        "Magic": "300(+40 每級)",
+        "ManaRecovery": "7.5(+0.75 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "62(+5 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "39(+4 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 142,
+    "name": "YUUMI",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta312e7cca0e594d1/5db0601d2140ec675d68f4c1/RiotX_ChampionList_yuumi.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "480(+70 每級)",
+        "LifeRecovery": "7(+0.55 每級)",
+        "Magic": "400(+45 每級)",
+        "ManaRecovery": "10(+0.4 每級)",
+        "Movementspeed": "330",
+        "PhysicalAttack": "55(+3.1 每級)",
+        "Attackdistance": "500",
+        "PhysicalDefense": "25(+3 每級)",
+        "MagicDefense": "25(+0.3 每級)"
+    }
+}, {
+    "id": 143,
+    "name": "ZAC",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9412083c2b98b9c8/5db0601d6af83b6d7032c910/RiotX_ChampionList_zac.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg",
+    "role": "TANK",
+    "Attributes": {
+        "Life": "615(+95 每級)",
+        "LifeRecovery": "8(+0.5 每級)",
+        "Magic": "0(+0 每級)",
+        "ManaRecovery": "0(+0 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "60(+3.4 每級)",
+        "Attackdistance": "175",
+        "PhysicalDefense": "33(+3.5 每級)",
+        "MagicDefense": "32(+1.25 每級)"
+    }
+}, {
+    "id": 144,
+    "name": "ZED",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt402d6da485218720/5db0601de9effa6ba5295fc5/RiotX_ChampionList_zed.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg",
+    "role": "ASSASSIN",
+    "Attributes": {
+        "Life": "584(+85 每級)",
+        "LifeRecovery": "7(+0.65 每級)",
+        "Magic": "200(+0 每級)",
+        "ManaRecovery": "50(+0 每級)",
+        "Movementspeed": "345",
+        "PhysicalAttack": "63(+3.4 每級)",
+        "Attackdistance": "125",
+        "PhysicalDefense": "32(+3.5 每級)",
+        "MagicDefense": "32.1(+1.25 每級)"
+    }
+}, {
+    "id": 145,
+    "name": "ZIGGS",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0f8c12d54d8ecd28/5db0602289fb926b491ed835/RiotX_ChampionList_ziggs.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "536(+92 每級)",
+        "LifeRecovery": "6.5(+0.6 每級)",
+        "Magic": "480(+23.5 每級)",
+        "ManaRecovery": "8(+0.8 每級)",
+        "Movementspeed": "325",
+        "PhysicalAttack": "54.208(+3.1 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "21.544(+3.3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 146,
+    "name": "ZILEAN",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta32de59397f53325/5db060222dc72966da746720/RiotX_ChampionList_zilean.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg",
+    "role": "SUPPORT",
+    "Attributes": {
+        "Life": "504(+82 每級)",
+        "LifeRecovery": "5.5(+0.5 每級)",
+        "Magic": "452(+30 每級)",
+        "ManaRecovery": "11.335(+0.8 每級)",
+        "Movementspeed": "335",
+        "PhysicalAttack": "51.64(+3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "24(+3.8 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 147,
+    "name": "ZOE",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd18587f31803441d/5db060226e8b0c6d038c5cc6/RiotX_ChampionList_zoe.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "560(+92 每級)",
+        "LifeRecovery": "6.5(+0.6 每級)",
+        "Magic": "425(+25 每級)",
+        "ManaRecovery": "8(+0.65 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "58(+3.3 每級)",
+        "Attackdistance": "550",
+        "PhysicalDefense": "20.8(+3.5 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}, {
+    "id": 148,
+    "name": "ZYRA",
+    "iconimg": "https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9bc3497cdd04f6d5/5db060229481396d6bdd01c4/RiotX_ChampionList_zyra.jpg?quality=90&width=250",
+    "img": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
+    "role": "MAGE",
+    "Attributes": {
+        "Life": "504(+79 每級)",
+        "LifeRecovery": "5.5(+0.5 每級)",
+        "Magic": "418(+25 每級)",
+        "ManaRecovery": "13(+0.4 每級)",
+        "Movementspeed": "340",
+        "PhysicalAttack": "53.376(+3.2 每級)",
+        "Attackdistance": "575",
+        "PhysicalDefense": "29(+3 每級)",
+        "MagicDefense": "30(+0.5 每級)"
+    }
+}]
