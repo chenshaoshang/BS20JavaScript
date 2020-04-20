@@ -123,22 +123,28 @@
         }
 
         function GuessNum(ans) {
-            parseInt(input.value);
+
+
             if (guess == 0) {
                 alert('請先設置')
             } else {
-                if (input.value > ans && input.value < big) {
-                    big = parseInt(input.value);
+                if (input.value.includes('.')) {
+                    alert('請輸入數字')
+                } else {
+                    parseInt(input.value);
+                    if (input.value > ans && input.value < big) {
+                        big = parseInt(input.value);
 
-                } else if (input.value < ans && input.value > small) {
-                    small = parseInt(input.value);
-                } else if (input.value == ans) {
-                    alert('猜對了')
-                    SetRandom();
-                    small = 0;
-                    big = 100;
+                    } else if (input.value < ans && input.value > small) {
+                        small = parseInt(input.value);
+                    } else if (input.value == ans) {
+                        alert('猜對了')
+                        SetRandom();
+                        small = 0;
+                        big = 100;
+                    }
+                    label.innerHTML = `${small}~${big}`
                 }
-                label.innerHTML = `${small}~${big}`
             }
             input.value = '';
         }
