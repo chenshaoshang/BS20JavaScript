@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        table {
+            border: 2px #000 solid;
+
+            font-size: 30px;
+        }
+
+        #thead th {
+            border: 2px #000 solid;
+        }
+
+        #tbody td {
+            width: 14%;
+            overflow: auto;
+            border: 2px #070 dashed;
+            height: 120px;
+            padding: 0;
+        }
+
+        .wrap {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .StartDay {
+            color: #00f;
+        }
+
+        .last_mon {
+            color: #aaa;
+        }
+
+        .mon {
+            color: #000
+        }
+
+        .weekend {
+            background-color: RGBA(255, 100, 0, 0.7);
+        }
+
+        .item {
+            display: block;
+            width: 75%;
+            margin: auto;
+        }
+
+        .WeekDays {
+            background-color: RGBA(190, 230, 205, .8)
+        }
+    </style>
+    <title>行事曆</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-4">
+                    <button type="button" id="left" class="btn btn-outline-secondary btn-lg rounded-circle">＜
+                    </button>
+                </div>
+                <div class="col-4">
+                    <h1 class="text-center"><span id="year"></span>年<span id="month"></span>月</h1>
+                </div>
+                <div class="col-4"><button id="right" type="button"
+                        class="btn btn-outline-secondary btn-lg rounded-circle">＞</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead id="thead">
+                    <tr>
+                        <th scope="col">SUN</th>
+                        <th scope="col">MON</th>
+                        <th scope="col">TUE</th>
+                        <th scope="col">WED</th>
+                        <th scope="col">THU</th>
+                        <th scope="col">FRI</th>
+                        <th scope="col">SAT</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">待辦項目</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="" id="localdate">日期：</label>
+                    </div>
+                    <div><label for="">時間：</label>
+                        <input type="time" id="localtime"></div>
+                    <div>
+                        <label for="">事情：</label>
+                        <input type="text" id="localtxt"></div>
+                    <div class="modal-footer" id="localbtn">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary d-none" id="save" data-dismiss="modal">
+                            save</button>
+                        <button type="button" class="btn btn-success d-inline-block" id="change" data-dismiss="modal">
+                            change</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade locolitem" id="modalitem" tabindex="-1" role="dialog" aria-labelledby="modalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">123</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id='localset'>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <template id="templateitem">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 justify-content-around d-flex">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="col-6 text-right">
+                    <button value="0" class="mr-2 btn btn-outline-success">修改</button>
+                    <button value="1" class="ml-2 btn btn-outline-danger">刪除</button>
+                </div>
+            </div>
+
+        </div>
+    </template>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="Calendar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
