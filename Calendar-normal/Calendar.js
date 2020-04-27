@@ -195,15 +195,5 @@ localchange.addEventListener('click', function (e) {
     }
     tmp.schedule.splice(tmpnum, 1, item);
     localStorage.setItem(labelshow, JSON.stringify(tmp));
-
+    CreateTable();
 })
-/* function localchange(el, index) {
-    console.log(el, index)
-    var item = {
-        time: document.getElementById('localtime').value,
-        thing: document.getElementById('localtxt').value,
-    }
-    el.schedule.splice(index, 1, item)
-    console.log(el.schedule.splice(index, 1, item))
-    localStorage.setItem(el.date, JSON.stringify(el))
-} */
