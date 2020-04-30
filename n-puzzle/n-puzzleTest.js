@@ -1,7 +1,9 @@
 var SetItem = document.getElementById('puzzle-item');
 var Set_Rnd = document.getElementById('start');
+var Get_Auto = document.getElementById('GoAuto')
 var CutImg = document.querySelector('#gameset');
 var imagebasic = document.querySelector('#gameset').selectedOptions[0].value;
+
 var white = 1;
 var Auto = [];
 var puzzleImg = new Image();
@@ -50,6 +52,32 @@ Set_Rnd.addEventListener('click', function () {
 })
 ImgClick();
 
+Get_Auto.addEventListener('click', function () {
+    ItemArray.forEach(el => {
+        if (el.style.backgroundImage == '') {
+            white = el.id
+        }
+    });
+    ImgAuto()
+    if (WinCheck()) {
+        setTimeout(function () {
+            alert('完成了');
+        }, 500);
+    }
+})
+
+function ImgAuto() {
+    console.log(Auto)
+    let index = Auto.length
+    for (let i = 0; i < index; i++) {
+        let tmp = Auto.pop();
+        let my = ItemArray[white - 1];
+        let other = ItemArray[tmp - 1];
+        ImgChange(other, my)
+        white = other.id;
+    }
+}
+
 function ImgClick() {
     ItemArray.forEach(element => {
         element.addEventListener('click', function (e) {
@@ -59,8 +87,7 @@ function ImgClick() {
                 let other = MoveCheck(e.target.id)
                 ImgChange(other, my)
                 if (WinCheck()) {
-                    element.style.backgroundImage = "url('1016-540x540.jpg')"
-                    element.style.backgroundPosition = '0 0'
+                    alert('完成了')
                 }
             }
         })
@@ -69,6 +96,7 @@ function ImgClick() {
 
 
 function ImgRandom(el) {
+    Auto.push(white);
     imagebasic = Number(imagebasic)
     el = Number(el)
     let ImgArray = [];

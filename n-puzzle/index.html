@@ -18,8 +18,11 @@
 
         #gameset {
             font-size: 30px;
+            height: 60px;
+            vertical-align: bottom;
         }
 
+        #GoAuto,
         #start {
             font-size: 30px;
         }
@@ -27,7 +30,6 @@
         #puzzle-item {
             width: 540px;
             height: 540px;
-
         }
 
         #puzzle-item div {
@@ -48,11 +50,10 @@
                     <option value="4">4X4</option>
                     <option value="5">5X5</option>
                 </select>
-                <button id="start">開始</button>
-
+                <button id="start" class="btn btn-outline-success">開始新局</button>
+                <button id="GoAuto" class="btn btn-outline-dark">自動還原</button>
             </div>
             <div class="col-12 col-md-6"><img src="1016-540x540.jpg"></div>
-
         </div>
         <script src="n-puzzleTest.js"></script>
         <!-- Optional JavaScript -->
