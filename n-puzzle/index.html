@@ -22,6 +22,7 @@
             vertical-align: bottom;
         }
 
+        #Change,
         #GoAuto,
         #start {
             font-size: 30px;
@@ -41,9 +42,19 @@
 
 <body>
     <div class="container">
-        <div class="row">
+        <div class="row flex-wrap">
             <div class="col-12 col-md-6 text-center">
                 <div id="puzzle-item" class="d-flex flex-wrap">
+                </div>
+                <div class="input-group my-3 ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">上傳圖片</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01" accept="image/*">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
                 </div>
                 <select id="gameset" class="mt-3">
                     <option value="3">3X3</option>
@@ -52,8 +63,10 @@
                 </select>
                 <button id="start" class="btn btn-outline-success">開始新局</button>
                 <button id="GoAuto" class="btn btn-outline-dark">自動還原</button>
+                <button id="Change"" class=" btn btn-outline-danger">更換圖片</button>
             </div>
-            <div class="col-12 col-md-6"><img src="1016-540x540.jpg"></div>
+            <div class="col-12 col-md-6"><img id='Contrast' src="1016-540x540.jpg">
+            </div>
         </div>
         <script src="n-puzzleTest.js"></script>
         <!-- Optional JavaScript -->
